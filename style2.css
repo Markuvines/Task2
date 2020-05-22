@@ -1,0 +1,40 @@
+body {
+background: #E5E5E5;
+}
+
+.colorsandtype {
+width: 1440px;
+height: 900px;
+background: #FFFFFF;
+}
+
+.emblem {
+position: relative;
+width: 48px;
+height: 48px;
+left: 29px;
+top: 29px;  
+}
+
+.emblem__circle {
+
+position: absolute;
+width: 48px;
+height: 48px;
+}
+
+.emblem__left {
+position: absolute;
+width: 14.12px;
+height: 14.12px;
+top: 18px;
+left: 11px;
+}
+
+.emblem__right {
+position: absolute;
+width: 10.94px;
+height: 7.09px;
+top: 11.5px;
+left: 25px;
+}
