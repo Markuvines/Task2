@@ -3,8 +3,9 @@
 //        contentBase: './dist'
 //    },
 //}
-const path = require('path')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
  entry: {
      app:'./src/index.js'
@@ -12,7 +13,12 @@ module.exports = {
  output:{
      filename:'[name].js',
      path: path.resolve(__dirname, './dist'),
-     publicPath: '/dist'
+    // publicPath: '/dist'
+ },
+ devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 9000
  },
  module: {
      rules:[{
@@ -45,6 +51,10 @@ module.exports = {
  plugins: [
      new MiniCssExtractPlugin({
          filename: "[name].css"
-     })
+     }),
+     new HtmlWebpackPlugin({
+        title: 'Custom template using Handlebars',
+        template: 'src/pug/pages/index.pug'
+      })
  ],
 }
