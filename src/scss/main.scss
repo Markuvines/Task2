@@ -1,49 +1,50 @@
-
-    body {
+body {
     background: #E5E5E5;
-    }
-    span {
-        font-weight: normal;
-    }
-    .colorsandtype {
+}
+
+span {
+    font-weight: normal;
+}
+
+.colorsandtype {
     position: absolute;
     width: 1440px;
     height: 900px;
     background: #FFFFFF;
-    }
-    
-    .emblem {
+}
+
+.emblem {
     position: relative;
     width: 48px;
     height: 48px;
-    left: 29px;
-    top: 29px;  
-    }
-    
-    .emblem__circle {
-    
+    left: 30px;
+    top: 30px;
+}
+
+.emblem__circle {
+
     position: absolute;
     width: 48px;
     height: 48px;
-    }
-    
-    .emblem__left {
+}
+
+.emblem__left {
     position: absolute;
     width: 14.12px;
     height: 14.12px;
     top: 18px;
     left: 11px;
-    }
-    
-    .emblem__right {
+}
+
+.emblem__right {
     position: absolute;
     width: 10.94px;
     height: 7.09px;
     top: 11.5px;
     left: 25px;
-    }
+}
 
-    .rectangle {
+.rectangle {
     display: inline-block;
     width: 70px;
     height: 70px;
@@ -51,28 +52,28 @@
     top: 145px;
     background: #1F2041;
     border-radius: 6px;
-    }
+}
 
-    .colors {
-        
+.colors {
+
     position: absolute;
     width: 269.26px;
     height: 610px;
     left: 149.74px;
     top: 145px;
-    }
-     
-    .Rectangle1{
+}
+
+.Rectangle1 {
     position: absolute;
     width: 70px;
     height: 70px;
     left: 0.26px;
-    
+
     background: #1F2041;
     border-radius: 6px;
-    }
+}
 
-    .Rectangle2 {
+.Rectangle2 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -80,9 +81,9 @@
     top: 90px;
     background: rgba(31, 32, 65, 0.75);
     border-radius: 6px;
-    }
+}
 
-    .Rectangle3{
+.Rectangle3 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -90,9 +91,9 @@
     top: 179.56px;
     background: rgba(31, 32, 65, 0.5);
     border-radius: 6px;
-    }
+}
 
-    .Rectangle4{
+.Rectangle4 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -100,9 +101,9 @@
     top: 270px;
     background: rgba(31, 32, 65, 0.25);
     border-radius: 6px;
-    }
+}
 
-    .Rectangle5{
+.Rectangle5 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -110,9 +111,9 @@
     top: 360px;
     background: rgba(31, 32, 65, 0.05);
     border-radius: 6px;
-    }
+}
 
-    .Rectangle6{
+.Rectangle6 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -120,9 +121,9 @@
     top: 450px;
     background: #BC9CFF;
     border-radius: 6px;
-    }
+}
 
-    .Rectangle7{
+.Rectangle7 {
     position: absolute;
     width: 70px;
     height: 70px;
@@ -130,9 +131,9 @@
     top: 540px;
     background: #6FCF97;
     border-radius: 6px;
-    }
+}
 
-    .def1 {
+.def1 {
     position: absolute;
     width: 159px;
     height: 57px;
@@ -146,24 +147,300 @@
     display: flex;
     align-items: center;
     color: #1F2041;
-    }
+}
 
-    .def2 {
-position: absolute;
-width: 150px;
-height: 57px;
-left: 110.26px;
-top: 97px;
-font-family: Quicksand;
-font-style: normal;
-font-weight: bold;
-font-size: 19px;
-line-height: 29px;
-display: flex;
-align-items: center;
+.def2 {
+    position: absolute;
+    width: 150px;
+    height: 57px;
+    left: 110.26px;
+    top: 97px;
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
 
-/* Dark 100% */
-color: #1F2041;
+    /* Dark 100% */
+    color: #1F2041;
 
-        }
-    
+}
+
+.def3 {
+    position: absolute;
+    width: 151px;
+    height: 57px;
+    left: 110.26px;
+    top: 187px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.def4 {
+    position: absolute;
+    width: 149px;
+    height: 57px;
+    left: 110.26px;
+    top: 277px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.def5 {
+    position: absolute;
+    width: 139px;
+    height: 58px;
+    left: 110.26px;
+    top: 366px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.def6 {
+    position: absolute;
+    width: 82px;
+    height: 58px;
+    left: 110.26px;
+    top: 456px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.def7 {
+    position: absolute;
+    width: 77px;
+    height: 57px;
+    left: 110.26px;
+    top: 547px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.headersDef {
+    position: absolute;
+    font-family: Quicksand;
+    font-weight: bold;
+    width: 403px;
+    height: 321px;
+    left: 846px;
+    top: 145px;
+
+}
+
+.headersDef__h1 {
+    position: absolute;
+    width: 29px;
+    height: 30px;
+    left: 8px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: right;
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.headersDef__h2 {
+    position: absolute;
+    width: 27px;
+    height: 24px;
+    left: 10px;
+    top: 110px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 23px;
+    /* identical to box height */
+
+    text-align: right;
+
+    /* Dark 25% */
+
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.headersDef__h3 {
+    position: absolute;
+    width: 17px;
+    height: 15px;
+    left: 20px;
+    top: 208px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-align: right;
+    text-transform: uppercase;
+
+    /* Dark 25% */
+
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.headersDef__body {
+    position: absolute;
+    width: 37px;
+    height: 24px;
+
+    top: 270px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+
+    text-align: right;
+
+    /* Dark 25% */
+
+    color: rgba(31, 32, 65, 0.25);
+}
+
+.headersDef__h1Text {
+    /* This one is the sub-section or widget title */
+
+
+    position: absolute;
+    width: 336px;
+    height: 60px;
+    left: 67px;
+
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.headersDef__h2Text {
+    /* Next one is the item title inside widgets */
+
+
+    position: absolute;
+    width: 282px;
+    height: 48px;
+    left: 67px;
+    top: 110px;
+
+    font-family: Quicksand;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+
+.headersDef__h3Text {
+    /* This is a label or CTA text */
+
+
+    position: absolute;
+    width: 186px;
+    height: 15px;
+    left: 67px;
+    top: 208px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    color: #1F2041;
+
+}
+
+.headersDef__bodyText {
+    /* This is the body text which is used for most of the design, like paragraphs, lists, etc. */
+
+
+    position: absolute;
+    width: 301px;
+    height: 48px;
+    left: 67px;
+    top: 270px;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+
+    /* Dark 75% */
+
+    color: rgba(31, 32, 65, 0.75);
+}
