@@ -444,3 +444,48 @@ span {
 
     color: rgba(31, 32, 65, 0.75);
 }
+
+.container {
+position: absolute;
+width: 218px;
+height: 195px;
+left: 979px;
+top: 231px;
+
+}
+
+
+.Standart-Nav-Bar {
+
+    &__body {
+    }
+
+    &__logo {
+    }
+
+    &__menu {
+    }
+
+    &__button-default {
+    }
+
+    &__button-white {
+    }
+}
+.logo {
+
+    &__emblem {
+    }
+
+    &__title {
+    }
+}
+.emblem {
+}
+.menu {
+}
+.button-default {
+}
+.button-white {
+}
+
