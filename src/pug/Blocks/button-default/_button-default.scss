@@ -1,0 +1,31 @@
+.button-default {
+
+   &__body {
+      position: absolute;
+width: 101px;
+height: 34px;
+
+background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+border-radius: 22px;
+
+   }
+
+   &__text {
+      position: absolute;
+width: 62px;
+height: 15px;
+left: 19px;
+top: 9px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+   }
+}
