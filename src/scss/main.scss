@@ -454,15 +454,14 @@ top: 231px;
 
 }
 @import '../pug/Blocks/button-default/button-default';
-
 @import '../pug/Blocks/button-else/button-else.scss';
-
 @import '../pug/Blocks/emblem/emblem.scss';
 @import '../pug/Blocks/emblem-default/emblem-default.scss';
 @import '../pug/Blocks/header-menu/header-menu.scss';
 @import '../pug/Blocks/logo/logo.scss';
 @import '../pug/Blocks/Standart-Nav-Bar/Standart-Nav-Bar';
-
+@import '../pug/Blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
+@import '../pug/Blocks/user/user.scss';
 
 
 .headers-and-footers {
@@ -472,6 +471,12 @@ height: 1350px;
 background: #F4F4F6;
 
     &__emblem {
+        position: absolute;
+width: 48px;
+height: 48px;
+left: 30px;
+top: 30px;
+
     }
 
     &__Standart-Nav-Bar {
@@ -483,6 +488,12 @@ top: 150px;
     }
 
     &__Standart-Logged-In-Nav-Bar {
+position: absolute;
+width: 1440px;
+height: 70px;
+left: 0px;
+top: 260px;
+
     }
 
     &__Footer-Widgets-and-Copyright-Bar {
