@@ -54,7 +54,7 @@ module.exports = {
      }),
      new HtmlWebpackPlugin({
         title: 'Custom template using Handlebars',
-        template: 'src/pug/pages/index.pug'
+        template: 'src/pages/index.pug'
       })
  ],
 }

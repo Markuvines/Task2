@@ -1,5 +1,5 @@
 //import './pug/pug1.pug'
 //import './scss/main.scss'
-import './css/main.css'
-import './scss/main.scss'
-import './pug/pages/index.pug'
+//import './css/main.css'
+import './main.scss'
+import './pages/index.pug'

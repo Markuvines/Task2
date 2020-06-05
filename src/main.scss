@@ -1,3 +1,4 @@
+@import './pages/reset.css';
 body {
     background: #E5E5E5;
 }
@@ -453,15 +454,15 @@ left: 979px;
 top: 231px;
 
 }
-@import '../pug/Blocks/button-default/button-default';
-@import '../pug/Blocks/button-else/button-else.scss';
-@import '../pug/Blocks/emblem/emblem.scss';
-@import '../pug/Blocks/emblem-default/emblem-default.scss';
-@import '../pug/Blocks/header-menu/header-menu.scss';
-@import '../pug/Blocks/logo/logo.scss';
-@import '../pug/Blocks/Standart-Nav-Bar/Standart-Nav-Bar';
-@import '../pug/Blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
-@import '../pug/Blocks/user/user.scss';
+@import './blocks/button-default/button-default';
+@import './blocks/button-else/button-else.scss';
+@import './blocks/emblem/emblem.scss';
+@import './blocks/emblem-default/emblem-default.scss';
+@import './blocks/header-menu/header-menu.scss';
+@import './blocks/logo/logo.scss';
+@import './blocks/Standart-Nav-Bar/Standart-Nav-Bar';
+@import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
+@import './blocks/user/user.scss';
 
 
 .headers-and-footers {
