@@ -1,0 +1,4 @@
+#Игнориравание каталога "node_modules"
+node_modules
+#Игнориравание каталога "dist"
+dist
