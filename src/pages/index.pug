@@ -1,44 +1,72 @@
 <!DOCTYPE html>
 html(lang="en")
-	head
-		meta(charset="UTF-8")
-		link(rel="stylesheet", href="reset.css")
-		link(rel="stylesheet", href="app.css")
-		link(rel="stylesheet", href="fonts.css")
-		meta(name="viewport", content="width=device-width, initial-scale=1.0")
-		title Document
-	body
-		mixin menu(elementname, itemclass, ...items)
-			ul(class="" + elementname)
-				each item in items
-					if (item=='NAVIGATION' || item=='ABOUT US' || item=='SUPPORT')
-						a(href="#")
-							li(class= "" + itemclass +"--active")= item
-					else
-						a(href="#")
-							li(class= "" + itemclass)= item
-		.headers-and-footers
-			.headers-and-footers__emblem.emblem
-				include ../blocks/emblem/emblem
-			.headers-and-footers__Standart-Nav-Bar.Standart-Nav-Bar
-				include ../blocks/Standart-Nav-Bar/Standart Nav Bar
-			.headers-and-footers__Standart-Logged-In-Nav-Bar.Standart-Logged-In-Nav-Bar
-				include ../blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar
-			.headers-and-footers__Footer-Widgets-and-Copyright-Bar.Footer-Widgets-and-Copyright-Bar
-				.Footer-Widgets-and-Copyright-Bar__logo-text.logo-text
-					.logo-text__logo
-					.logo-text__text
-				nav.Footer-Widgets-and-Copyright-Bar__navigation-menu.navigation-menu
-					//- ul.navigation-menu__menu-list Navigation
-					//- 	li.navigation-menu__item About Us
-					//- 	li.navigation-menu__item News
-					//- 	li.navigation-menu__item Support
-					//- 	li.navigation-menu__item Products
-					+menu('navigation-menu__menu-list', 'navigation-menu__item', 'NAVIGATION', 'About Us', 'News', 'Support', 'Products')
-				.Footer-Widgets-and-Copyright-Bar__about-us-menu.about-us-menu
-					+menu('about-us-menu__menu-list', 'about-us-menu__item', 'ABOUT US', 'Who we are', 'Our team', 'Careers', 'Investors')
-				.Footer-Widgets-and-Copyright-Bar__support-menu.support-menu
-					+menu('support-menu__menu-list', 'support-menu__item', 'SUPPORT', 'Documentation', 'Community', 'Get in Touch')
-				.Footer-Widgets-and-Copyright-Bar__subscribe.subscribe
-				.Footer-Widgets-and-Copyright-Bar__copyrite-bar.copyrite-bar
-			.headers-and-footers__Footer-Creative.Footer-Creative
+  head
+    link(rel="stylesheet", href="fonts.css")
+    link(rel="stylesheet", href="app.css")
+    meta(charset="UTF-8")
+    //- meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+  body
+    mixin color-item(colorName, text, modificator)
+      li.colorItem.colorsMenu__colorItem
+        div(class='colorItem__rect '+'colorItem__rect'+modificator)
+        .colorItem__text= colorName+text
+    mixin title-item(titleItem, text)
+      li.titleItem.titleMenu__titleItem
+        .titleItem__title= titleItem
+        .titleItem__text= text
+    .colorsandtype
+      include ../blocks/emblem/emblem
+      ul.colorsMenu.colorsandtype__colorsMenu
+        +color-item('Dark Shade 100%','#1F2041','--DarkShade100')
+        +color-item('Dark Shade 75%','#1F2041','--DarkShade75')
+        +color-item('Dark Shade 50%','#1F2041','--DarkShade50')
+        +color-item('Dark Shade 25%','#1F2041','--DarkShade25')
+        +color-item('Dark Shade 5%','#1F2041','--DarkShade5')
+        +color-item('Purple','#BC9CFF','--purple')
+        +color-item('Green','#6FCF97','--green')
+      ul.titleMenu.colorsandtype__titleMenu
+        +title-item('H1', 'This one is the sub-section or widget title')
+        +title-item('H2','Next one is the item title inside widgets')
+        +title-item('H3', 'This is a label or CTA text')
+        +title-item('Body', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+        //- .Rectangle1
+        //- .Rectangle1
+        //- .Rectangle2
+        //- .Rectangle3
+        //- .Rectangle4
+        //- .Rectangle5
+        //- .Rectangle6
+        //- .Rectangle7
+        //- .def1
+        //- 	p Dark Shade 100%<br><span>#1F2041
+        //- .def2
+        //- 	p Dark Shade 75%<br><span>#1F2041
+        //- .def3
+        //- 	p Dark Shade 50%<br><span>#1F2041
+        //- .def4
+        //- 	p Dark Shade 25%<br><span>#1F2041
+        //- .def5
+        //- 	p Dark Shade 5%<br><span>#1F2041
+        //- .def6
+        //- 	p Purple<br><span>#BC9CFF
+        //- .def7
+        //- 	p Green<br><span>#6FCF97
+    //-   .headersDef
+    //-     .headersDef__h1 H1
+    //-     .headersDef__h2 H2
+    //-     .headersDef__h3 H3
+    //-     .headersDef__body Body
+    //-     .headersDef__h1Text This one is the sub-section or widget title
+    //-     .headersDef__h2Text Next one is the item title inside widgets
+    //-     .headersDef__h3Text This is a label or CTA text
+    //-     .headersDef__bodyText This is the body text which is used for most of the design, like paragraphs, items, etc.
+    //- //-  ul.colors
+    //-   li
+    //-    include ../includes/colorDefine
+    //-   li.darkShade75
+    //-   li.darkShade50
+    //-   li.darkShade25
+    //-   li.darkShade5
+    //-   li.purple
+    //-   li.green
