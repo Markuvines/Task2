@@ -5,76 +5,17 @@ body {
     background: #E5E5E5;
 }
 
-.colorsandtype {
 
-    &__colorsMenu {
-position: absolute;
-width: 269.26px;
-height: 610px;
-left: 149.74px;
-top: 145px;
-    }
+@import './blocks/colorsandtype/colorsandtype.scss';
 
-    &__titleMenu {
-        position: absolute;
-width: 10.94px;
-height: 7.09px;
-left: 55.77px;
-top: 48.35px;
-    }
-    position: relative;
-width: 1440px;
-height: 900px;
+@import './blocks/colorsMenu/colorsMenu.scss';
 
-background: #FFFFFF;
-}
-.colorsMenu {
+@import './blocks/colorItem/colorItem.scss';
 
-    &__colorItem {
-    }
-}
-.colorItem {
+@import './blocks/titleMenu/titleMenu.scss';
 
-    &__rect {
-    }
+@import './blocks/titleItem/titleItem.scss';
 
-    &__rect--DarkShade100 {
-    }
-
-    &__text {
-    }
-
-    &__rect--DarkShade75 {
-    }
-
-    &__rect--DarkShade50 {
-    }
-
-    &__rect--DarkShade25 {
-    }
-
-    &__rect--DarkShade5 {
-    }
-
-    &__rect--purple {
-    }
-
-    &__rect--green {
-    }
-}
-.titleMenu {
-
-    &__titleItem {
-    }
-}
-.titleItem {
-
-    &__title {
-    }
-
-    &__text {
-    }
-}
 
 // span {
 //     font-weight: normal;
