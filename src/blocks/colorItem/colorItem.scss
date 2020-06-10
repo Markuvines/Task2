@@ -8,19 +8,18 @@
 
   @import './__rect/--DarkShade75/colorItem__rect--DarkShade75.scss';
 
-  &__rect--DarkShade50 {
-  }
+  @import './__rect/--DarkShade50/colorItem__rect--DarkShade50.scss';
 
-  &__rect--DarkShade25 {
-  }
+  @import './__rect/--DarkShade25/colorItem__rect--DarkShade25.scss';
 
-  &__rect--DarkShade5 {
-  }
+  @import './__rect/--DarkShade5/colorItem__rect--DarkShade5.scss';
 
-  &__rect--purple {
-  }
+  @import './__rect/--purple/colorItem__rect--purple.scss';
 
-  &__rect--green {
+  @import './__rect/--green/colorItem__rect--green.scss';
+
+  &__textColor {
+    font-weight: normal;
   }
   font-family: Quicksand;
 font-style: normal;

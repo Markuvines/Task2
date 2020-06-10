@@ -7,6 +7,9 @@
   left: 149.74px;
   top: 145px;
   border: solid 1px ;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between
   }
 
   &__titleMenu {

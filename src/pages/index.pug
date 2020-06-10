@@ -10,7 +10,8 @@ html(lang="en")
     mixin color-item(colorName, text, modificator)
       li.colorItem.colorsMenu__colorItem
         div(class='colorItem__rect '+'colorItem__rect'+modificator)
-        .colorItem__text= colorName+text
+        .colorItem__text= colorName
+          .colorItem__textColor=text
     mixin title-item(titleItem, text)
       li.titleItem.titleMenu__titleItem
         .titleItem__title= titleItem
