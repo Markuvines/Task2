@@ -2,6 +2,7 @@
 
   &__titleItem {
   display: flex;
+  flex-wrap: wrap;
   // flex-direction: row;
   // justify-content: space-between;
   
@@ -15,4 +16,6 @@ line-height: 24px;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
+
+
 }

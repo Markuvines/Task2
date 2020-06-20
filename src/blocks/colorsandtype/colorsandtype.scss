@@ -1,27 +1,17 @@
 .colorsandtype {
+  
 
-  &__colorsMenu {
-  position: absolute;
-  width: 269.26px;
-  height: 610px;
-  left: 149.74px;
-  top: 145px;
-  // border: solid 1px ;
-  display: flex;
-  flex-direction: column;
-  justify-content:space-between
-  }
+  @import './__colorsMenu/colorsandtype__colorsMenu.scss';
+  @import './__titleMenu/colorsandtype__titleMenu.scss';
+  @import './__Container/colorsandtype__container.scss';
+  @import './__menu-container/colorsandtype__menu-container.scss';
 
-  &__titleMenu {
-    position: absolute;
-    width: 403px;
-    height: 321px;
-    left: 846px;
-    top: 145px;
-  }
 position: relative;
-width: 1440px;
+max-width: 1440px;
 height: 900px;
-
+padding: 10px;
 background: #FFFFFF;
+@media (max-width:691px) {
+  height: 100%;
+    }
 }

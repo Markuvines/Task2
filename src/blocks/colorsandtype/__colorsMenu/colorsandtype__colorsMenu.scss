@@ -1,0 +1,14 @@
+&__colorsMenu {
+
+  // width: 269.26px;
+  height: 610px;
+  display: flex;
+  // align-self: flex-end;
+  flex-direction: column;
+  justify-content:space-between;
+  @media (max-width:691px) {
+    margin-bottom: 50px;
+      }
+  }
+
+ 

@@ -1,9 +1,8 @@
 &__text--Body {
 
-  width: 301px;
+  max-width: 301px;
   height: 48px;
   
-
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -15,4 +14,9 @@
   /* Dark 75% */
 
   color: rgba(31, 32, 65, 0.75);
+  @media (max-width:691px) {
+    height: 55px;
+    line-height: 145%
+
+      }
 }

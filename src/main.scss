@@ -1,11 +1,51 @@
 @import './pages/reset.css';
 
-
-body {
-    background: #E5E5E5;
+html {
+    box-sizing: border-box;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
 }
 
 
+body {
+    background: #E5E5E5;
+    
+}
+.wrapper {
+
+   display: flex;
+   margin-top: 8.4375rem;
+   max-width: 1239px;
+    justify-content: flex-end;
+    
+}
+// .wrapper2 {
+//     margin-left: 100px;
+//     max-width: 1099.26px;
+//     height: 610px;
+   
+//     border: solid;
+// }
+// .colorsandtype__emblem {
+    
+//     // margin-right: 71.74px;
+    
+// }
+
+.emblem-wrapper {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    left: 30px;
+    top: 30px;
+   
+    // margin-right:4.98194444% ;
+    // margin-bottom:7.444444% ;
+    // margin-bottom: 4.65277778%;
+    // margin-bottom: 67px;
+    margin-bottom: 4.1875rem;
+}
 @import './blocks/colorsandtype/colorsandtype.scss';
 
 @import './blocks/colorsMenu/colorsMenu.scss';
