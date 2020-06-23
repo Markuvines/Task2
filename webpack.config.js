@@ -43,7 +43,15 @@ module.exports = {
             }
         ]
     },
-{test: /\.pug$/, use: 'pug-loader'}]
+{test: /\.pug$/, use: 'pug-loader'},
+{
+    test: /\.(png|jpe?g|gif|svg)$/i,
+    loader: 'file-loader',
+    options: {
+      name: '[name].[ext]',
+    },
+  },
+]
  },
  devServer:{
      overlay: true

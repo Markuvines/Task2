@@ -1,12 +1,7 @@
 .colorsMenu {
-
-
-  &__colorItem {
-    
-    width: 269px;
-    height: 70px;
-    
-    // border: solid 1px;
-  }
-  
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  @import './__colorItem/colorsMenu__colorItem.scss';
 }

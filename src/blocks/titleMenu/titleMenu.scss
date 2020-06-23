@@ -1,21 +1,12 @@
 .titleMenu {
-
-  &__titleItem {
+  height: 321px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
   display: flex;
-  flex-wrap: wrap;
-  // flex-direction: row;
-  // justify-content: space-between;
-  
-  // border: solid 1px;
-  }
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;
-line-height: 24px;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-
-
+  flex-direction: column;
+  justify-content: space-between;
+  @import './__titleItem/titleMenu__titleItem.scss';
 }
