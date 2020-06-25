@@ -1,131 +1,42 @@
-@import './pages/reset.css';
-
-html {
-    box-sizing: border-box;
-}
-*, *:after, *:before {
-    box-sizing: inherit;
-}
-
 body {
   background: #E5E5E5;
 }
-
-@import './blocks/colorsandtype/colorsandtype.scss';
-@import './blocks/colorsMenu/colorsMenu.scss';
-@import './blocks/colorItem/colorItem.scss';
-@import './blocks/titleMenu/titleMenu.scss';
-@import './blocks/titleItem/titleItem.scss';
-
-
-
+@import './blocks/headers-and-footers/headers-and-footers.scss';
 @import './blocks/button-default/button-default';
 @import './blocks/button-else/button-else.scss';
-@import './blocks/emblem/emblem.scss';
-@import './blocks/emblem-default/emblem-default.scss';
-@import './blocks/header-menu/header-menu.scss';
-@import './blocks/logo/logo.scss';
-@import './blocks/Standart-Nav-Bar/Standart-Nav-Bar';
-@import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
-@import './blocks/user/user.scss';
+// @import './blocks/emblem/emblem.scss';
+// @import './blocks/emblem-default/emblem-default.scss';
+// @import './blocks/header-menu/header-menu.scss';
+// @import './blocks/logo/logo.scss';
+@import './blocks/Standart-Nav-Bar/Standart-Nav-Bar.scss';
+// @import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
+// @import './blocks/user/user.scss';
 
 
-.headers-and-footers {
-position: relative;
-width: 1440px;
-height: 1350px;
-background: #F4F4F6;
 
-    &__emblem {
-        position: absolute;
-width: 48px;
-height: 48px;
-left: 30px;
-top: 30px;
 
+.logo {
+}
+.header-menu {
+
+    &__menu-list {
+     
+    }
+}
+.menu-list {
+
+    &__item {
     }
 
-    &__Standart-Nav-Bar {
-position: absolute;
-width: 1440px;
-height: 70px;
-left: 0px;
-top: 150px;
+    &__item--active {
+    }
+}
+.button-default {
+
+    &__body {
     }
 
-    &__Standart-Logged-In-Nav-Bar {
-position: absolute;
-width: 1440px;
-height: 70px;
-left: 0px;
-top: 260px;
-
-    }
-
-    &__Footer-Widgets-and-Copyright-Bar {
-    }
-
-    &__Footer-Creative {
+    &__text {
     }
 }
 
-
-
-
-
-
-
-
-
-.Standart-Logged-In-Nav-Bar {
-
- &__body {
-    }
-
-    &__logo {
-    }
-
-    &__menu {
-    }
-
-    &__user {
-    }
-}
-.menu {
-}
-.user {
-}
-.Footer-Widgets-and-Copyright-Bar {
-
-    &__logo-text {
-    }
-
-    &__navigation-menu {
-    }
-
-    &__about-us-menu {
-    }
-
-    &__support-menu {
-    }
-
-    &__subscribe {
-    }
-
-    &__copyrite-bar {
-    }
-}
-.logo-text {
-}
-.navigation-menu {
-}
-.about-us-menu {
-}
-.support-menu {
-}
-.subscribe {
-}
-.copyrite-bar {
-}
-.Footer-Creative {
-}

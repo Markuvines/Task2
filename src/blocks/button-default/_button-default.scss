@@ -1,43 +1,23 @@
 .button-default {
-
-   &__body {
-      position: absolute;
-width: 101px;
-height: 34px;
-
-background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
-border-radius: 22px;
-
-   }
+  max-width: 99px;
+  height: 44px;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  padding: 0.875rem 0 0 1.1875rem;
 
    &__text {
-      position: absolute;
-width: 62px;
-height: 15px;
-left: 19px;
-top: 9px;
+  // display: inline;
+  // width: 59px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+  text-transform: uppercase;
 
-text-transform: uppercase;
-
-color: #FFFFFF;
-   }
-}
-
-.headers-and-footers {
-
-   &__Standart-Logged-In-Nav-Bar {
-      position: absolute;
-width: 1440px;
-height: 70px;
-left: 0px;
-top: 260px;
+  color: #FFFFFF;
    }
 }
 

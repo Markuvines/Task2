@@ -1,0 +1,9 @@
+.headers-and-footers {
+  position: relative;
+  max-width: 1440px;
+  height: 1350px;
+  padding: 8.75rem 0;
+  background: #F4F4F6;
+  @import './__emblem/headers-and-footers__emblem.scss';
+  @import './__Standart-Nav-Bar/headers-and-footers__Standart-Nav-Bar.scss';
+}
