@@ -6,31 +6,19 @@ body {
 @import './blocks/button-else/button-else.scss';
 // @import './blocks/emblem/emblem.scss';
 // @import './blocks/emblem-default/emblem-default.scss';
-// @import './blocks/header-menu/header-menu.scss';
+@import './blocks/header-menu/header-menu.scss';
 // @import './blocks/logo/logo.scss';
 @import './blocks/Standart-Nav-Bar/Standart-Nav-Bar.scss';
 // @import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
 // @import './blocks/user/user.scss';
-
+@import './blocks/menu-list/menu-list.scss';
 
 
 
 .logo {
 }
-.header-menu {
 
-    &__menu-list {
-     
-    }
-}
-.menu-list {
 
-    &__item {
-    }
-
-    &__item--active {
-    }
-}
 .button-default {
 
     &__body {
@@ -40,3 +28,6 @@ body {
     }
 }
 
+a {
+    text-decoration: none;
+}

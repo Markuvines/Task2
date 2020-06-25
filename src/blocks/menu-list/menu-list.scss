@@ -1,0 +1,12 @@
+.menu-list {
+@import './__item/menu-list__item.scss';
+@import './__item/--active/menu-list__item--active.scss';
+&__dropdown-img {
+  display: inline-block;
+  width:24px ;
+  height:21px ;
+  
+align-items: center;
+text-align: center;
+}
+}

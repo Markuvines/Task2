@@ -22,7 +22,8 @@ html(lang="ru")
         else
           a(href="#")
             li(class="menu-list__item")= elementname
-              img(src="./src/img/expand_more.svg")
+              .menu-list__dropdown-img
+                img(src="./src/img/expand_more.svg")
       else
         if (active==true)
           a(href="#")
