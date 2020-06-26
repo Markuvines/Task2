@@ -18,7 +18,8 @@ html(lang="ru")
         if (active==true)
           a(href="#")
             li(class="menu-list__item "+"menu-list__item--active")= elementname
-              img(src="./src/img/expand_more.svg")
+              .menu-list__dropdown-img
+                img(src="./src/img/expand_more.svg")
         else
           a(href="#")
             li(class="menu-list__item")= elementname

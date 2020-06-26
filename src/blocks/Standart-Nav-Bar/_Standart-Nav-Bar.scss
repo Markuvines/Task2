@@ -1,6 +1,10 @@
 .Standart-Nav-Bar {
+  padding: 0.9375rem 0 0 0 ;
 
   &__body {
+    display: flex;
+    // justify-content: space-between;
+    max-width: 1160px;
     
   }
 
