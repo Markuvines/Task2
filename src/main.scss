@@ -5,29 +5,12 @@ body {
 @import './blocks/button-default/button-default';
 @import './blocks/button-else/button-else.scss';
 // @import './blocks/emblem/emblem.scss';
-// @import './blocks/emblem-default/emblem-default.scss';
 @import './blocks/header-menu/header-menu.scss';
 // @import './blocks/logo/logo.scss';
 @import './blocks/Standart-Nav-Bar/Standart-Nav-Bar.scss';
-// @import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
-// @import './blocks/user/user.scss';
+@import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
+@import './blocks/user/user.scss';
 @import './blocks/menu-list/menu-list.scss';
-
-
-
-.logo {
-}
-
-
-.button-default {
-
-    &__body {
-    }
-
-    &__text {
-    }
-}
-
 a {
     text-decoration: none;
 }
