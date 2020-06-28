@@ -1,26 +1,15 @@
 .button-default {
-  // max-width: 99px;
-  // height: 44px;
   background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   border-radius: 22px;
   padding: 0.875rem 1.3125rem 0 1.1875rem;
-// display: flex;
-// align-items: center;
-   &__text {
-  // display: inline;
-  // width: 59px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-   }
+  &__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
 }
-
-
-

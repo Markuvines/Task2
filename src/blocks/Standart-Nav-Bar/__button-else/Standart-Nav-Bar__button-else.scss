@@ -1,13 +1,10 @@
 &__button-else {
-flex-basis: 87px;
-height: 34px;
-align-self: center;
-margin-right: 1.25rem;
- .button-else__body {
-   padding: 0.4375rem 0 0 0;
-   height: 30px;
- }
-//  @media (max-width:428px) {
-//    margin: 0;
-//  }
+  flex-basis: 87px;
+  height: 34px;
+  align-self: center;
+  margin-right: 1.25rem;
+  .button-else__body {
+    padding: 0.4375rem 0 0 0;
+    height: 30px;
+  }
 }

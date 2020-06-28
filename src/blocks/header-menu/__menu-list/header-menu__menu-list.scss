@@ -1,16 +1,14 @@
 &__menu-list {
-   display: flex;
-   // max-width: 447px;
-   height: 21px;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   @media (max-width:467px) {
-      .menu-list__dropdown-img {
-         width: 12px;
-         img {
-            width:10px ;
-         }
+  display: flex;
+  height: 21px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media (max-width:467px) {
+    .menu-list__dropdown-img {
+      width: 12px;
+      img {
+        width:10px ;
       }
     }
-   
+  }
 }
