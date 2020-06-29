@@ -17,20 +17,20 @@ html(lang="ru")
       if (dropdown==true)
         if (active==true)
           a(href="#")
-            li(class="menu-list__item "+"menu-list__item--active")= elementname
-              .menu-list__dropdown-img
+            li(class="header-menu__item"+"header-menu__item--active")= elementname
+              .header-menu__dropdown-img
                 img(src="./src/img/expand_more.svg")
         else
-          a(href="#")
-            li(class="menu-list__item")= elementname
-              .menu-list__dropdown-img
-                img(src="./src/img/expand_more.svg")
+          //- a(href="#")
+          li(class="header-menu__item")= elementname
+            .header-menu__dropdown-img
+              img(src="./src/img/expand_more.svg")
       else
         if (active==true)
-          a(href="#")
-            li(class="menu-list__item "+"menu-list__item--active")= elementname
+          //- a(href="#")
+          li(class="header-menu__item "+"header-menu__item--active")= elementname
         else
-          a(href="#")
-            li(class="menu-list__item")= elementname
+          //- a(href="#")
+          li(class="header-menu__item")= elementname
     .headers-and-footers
       include ../blocks/headers-and-footers/headers-and-footers
