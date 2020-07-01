@@ -1,3 +1,93 @@
-.Footer-Widgets-and-Copyright-Bar__subscription-text-field {
+.Footer-Widgets-and-Copyright-Bar {
 
+  &__Footer-Widgets {
+  }
+
+  &__body {
+    display: flex;
+    flex-basis: 1160px;
+    align-items: center;
+  }
+
+  &__discription {
+  }
+
+  &__text {
+  }
+
+  &__footer-nav {
+  }
+
+  &__navigation {
+  }
+
+  &__title {
+  }
+
+  &__menu-list {
+  }
+
+  &__menu-item {
+  }
+
+  &__about-us {
+  }
+
+  &__support {
+  }
+
+  &__subscriprion {
+  }
+
+  &__subscription-text-field {
+  }
+
+  &__Copyright-Bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  }
+
+  &__copyright-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.75);
+  flex: 1 1 auto;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    flex-basis:112px;
+  }
+
+  &__inst {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__twit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+  }
 }

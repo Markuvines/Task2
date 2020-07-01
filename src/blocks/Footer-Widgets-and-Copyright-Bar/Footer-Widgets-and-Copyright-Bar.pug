@@ -4,21 +4,30 @@
         include ../logo/logo
         p.Footer-Widgets-and-Copyright-Bar__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
       nav.Footer-Widgets-and-Copyright-Bar__footer-nav
-        .Footer-Widgets-and-Copyright__navigation
-          h3.Footer-Widgets-and-Copyright__title навигация
-          ul.Footer-Widgets-and-Copyright__menu-list
+        .Footer-Widgets-and-Copyright-Bar__navigation
+          h3.Footer-Widgets-and-Copyright-Bar__title навигация
+          ul.Footer-Widgets-and-Copyright-Bar__menu-list
             +footer-menu("О нас","Новости","Служба поддержки","Услуги")
-        .Footer-Widgets-and-Copyright__about-us
-          h3.Footer-Widgets-and-Copyright__title о нас
-          ul.Footer-Widgets-and-Copyright__menu-list
+        .Footer-Widgets-and-Copyright-Bar__about-us
+          h3.Footer-Widgets-and-Copyright-Bar__title о нас
+          ul.Footer-Widgets-and-Copyright-Bar__menu-list
             +footer-menu("О сервисе","Наша команда","Вакансии","Инвесторы")
-        .Footer-Widgets-and-Copyright__support
-          h3.Footer-Widgets-and-Copyright__title Служба поддержки
-          ul.Footer-Widgets-and-Copyright__menu-list
+        .Footer-Widgets-and-Copyright-Bar__support
+          h3.Footer-Widgets-and-Copyright-Bar__title Служба поддержки
+          ul.Footer-Widgets-and-Copyright-Bar__menu-list
             +footer-menu("Соглашения","Сообщества","Связь с нами")
-      form.Footer-Widgets-and-Copyright-Bar__subscriprion
+      form(action="#").Footer-Widgets-and-Copyright-Bar__subscriprion
         h3.Footer-Widgets-and-Copyright-Bar__title подписка
         p.Footer-Widgets-and-Copyright-Bar__text Получайте специальные предложения и новости сервиса
         .Footer-Widgets-and-Copyright-Bar__subscription-text-field.subscription-text-field
           include ../Form-Elements/subscription-text-field/subscription-text-field
 .Footer-Widgets-and-Copyright-Bar__Copyright-Bar
+  .Footer-Widgets-and-Copyright-Bar__body
+    p.Footer-Widgets-and-Copyright-Bar__copyright-text Copyright © 2018 Toxin отель. Все права зачищены.
+    .Footer-Widgets-and-Copyright-Bar__social
+      .Footer-Widgets-and-Copyright-Bar__twit
+        img(src="./src/img/twit.svg", alt="twitter")
+      .Footer-Widgets-and-Copyright-Bar__fb
+        img(src="./src/img/fb.svg", alt="facebook")
+      .Footer-Widgets-and-Copyright-Bar__inst
+        img(src="./src/img/inst.svg", alt="instagram")
