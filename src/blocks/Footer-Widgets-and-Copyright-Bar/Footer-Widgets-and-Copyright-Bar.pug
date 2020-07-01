@@ -16,8 +16,9 @@
           h3.Footer-Widgets-and-Copyright__title Служба поддержки
           ul.Footer-Widgets-and-Copyright__menu-list
             +footer-menu("Соглашения","Сообщества","Связь с нами")
-      .Footer-Widgets-and-Copyright-Bar__subscriprion
+      form.Footer-Widgets-and-Copyright-Bar__subscriprion
         h3.Footer-Widgets-and-Copyright-Bar__title подписка
         p.Footer-Widgets-and-Copyright-Bar__text Получайте специальные предложения и новости сервиса
-        form
+        .Footer-Widgets-and-Copyright-Bar__subscription-text-field.subscription-text-field
+          include ../Form-Elements/subscription-text-field/subscription-text-field
 .Footer-Widgets-and-Copyright-Bar__Copyright-Bar
