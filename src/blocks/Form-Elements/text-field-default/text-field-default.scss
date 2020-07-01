@@ -1,0 +1,20 @@
+.text-field {
+  width: 320px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+::-webkit-input-placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+  }
+
+@import './--focus/text-field-default--focus.scss';
+@import './--hover/text-field-default--hover.scss';
