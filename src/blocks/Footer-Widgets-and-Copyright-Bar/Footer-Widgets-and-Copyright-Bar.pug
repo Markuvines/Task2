@@ -1,8 +1,9 @@
 .Footer-Widgets-and-Copyright-Bar__Footer-Widgets
-    .Footer-Widgets-and-Copyright-Bar__body
+    .Footer-Widgets-and-Copyright-Bar__Footer-Widgets-body
       .Footer-Widgets-and-Copyright-Bar__discription
-        include ../logo/logo
-        p.Footer-Widgets-and-Copyright-Bar__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .Footer-Widgets-and-Copyright-Bar__logo.logo
+          include ../logo/logo
+        p.Footer-Widgets-and-Copyright-Bar__discription-text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
       nav.Footer-Widgets-and-Copyright-Bar__footer-nav
         .Footer-Widgets-and-Copyright-Bar__navigation
           h3.Footer-Widgets-and-Copyright-Bar__title навигация
@@ -17,12 +18,12 @@
           ul.Footer-Widgets-and-Copyright-Bar__menu-list
             +footer-menu("Соглашения","Сообщества","Связь с нами")
       form(action="#").Footer-Widgets-and-Copyright-Bar__subscriprion
-        h3.Footer-Widgets-and-Copyright-Bar__title подписка
-        p.Footer-Widgets-and-Copyright-Bar__text Получайте специальные предложения и новости сервиса
-        .Footer-Widgets-and-Copyright-Bar__subscription-text-field.subscription-text-field
+        h3.Footer-Widgets-and-Copyright-Bar__subscriprion-title подписка
+        p.Footer-Widgets-and-Copyright-Bar__subscriprion-text Получайте специальные предложения и новости сервиса
+        .subscription-text-field.Footer-Widgets-and-Copyright-Bar__subscription-text-field
           include ../Form-Elements/subscription-text-field/subscription-text-field
 .Footer-Widgets-and-Copyright-Bar__Copyright-Bar
-  .Footer-Widgets-and-Copyright-Bar__body
+  .Footer-Widgets-and-Copyright-Bar__Copyright-Bar-body
     p.Footer-Widgets-and-Copyright-Bar__copyright-text Copyright © 2018 Toxin отель. Все права зачищены.
     .Footer-Widgets-and-Copyright-Bar__social
       .Footer-Widgets-and-Copyright-Bar__twit

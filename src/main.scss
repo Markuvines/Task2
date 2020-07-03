@@ -15,9 +15,10 @@ body {
 @import './blocks/Standart-Logged-In-Nav-Bar/Standart-Logged-In-Nav-Bar.scss';
 @import './blocks/user/user.scss';
 // @import './blocks/menu-list/menu-list.scss';
-@import './blocks/Footer-Widgets-and-Copyright-Bar/Footer-Widgets-and-Copyright-Bar.scss';
+
 @import './blocks/Form-Elements/text-field-default/text-field-default.scss';
 @import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
+@import './blocks/Footer-Widgets-and-Copyright-Bar/Footer-Widgets-and-Copyright-Bar.scss';
 a {
     text-decoration: none;
 }
