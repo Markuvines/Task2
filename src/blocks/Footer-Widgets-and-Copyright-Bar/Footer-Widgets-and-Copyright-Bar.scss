@@ -1,5 +1,5 @@
 .Footer-Widgets-and-Copyright-Bar {
-
+  // @import '../social/social.scss';
   &__Footer-Widgets {
     padding: 0 8px;
     height: 372px;
@@ -181,42 +181,18 @@
   }
 
   &__copyright-text {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 0.75);
-  flex: 1 1 auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(31, 32, 65, 0.75);
+    flex: 1 1 auto;
   }
 
   &__social {
-    display: flex;
-    justify-content: space-between;
     flex-basis:112px;
   }
 
-  &__inst {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-  }
-
-  &__fb {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-  }
-
-  &__twit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-  }
+  
 }
