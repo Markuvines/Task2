@@ -6,34 +6,21 @@ html(lang="ru")
     link(rel="stylesheet", href="app.css")
     link(rel="stylesheet", href="fonts.css")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Headers-Footers
+    title Form-Elements
   body 
-    mixin button-else(text)
-      .button-else__body
-        .button-else__text=text
-    mixin button-default(text)
-      .button-default__text=text
-    mixin menu-item(elementname, dropdown=false, active=false)
-      if (dropdown==true)
-        if (active==true)
-          a(href="#")
-            li(class="header-menu__item"+"header-menu__item--active")= elementname
-              .header-menu__dropdown-img
-                img(src="./src/img/expand_more.svg")
-        else
-          //- a(href="#")
-          li(class="header-menu__item")= elementname
-            .header-menu__dropdown-img
-              img(src="./src/img/expand_more.svg")
-      else
-        if (active==true)
-          //- a(href="#")
-          li(class="header-menu__item "+"header-menu__item--active")= elementname
-        else
-          //- a(href="#")
-          li(class="header-menu__item")= elementname
-    mixin footer-menu(...items)
-      each item in items
-        li.Footer-Widgets-and-Copyright-Bar__menu-item=item
-    .headers-and-footers
-      include ../blocks/headers-and-footers/headers-and-footers
+    .formElements
+      .emblem
+        include ../blocks/emblem/emblem
+      .container
+        .colomn1
+          .text-field-default-container
+            p.name text field
+            p.condition default
+            include ../blocks/Form-Elements/text-field-default/text-field-default
+          .text-field-hover-focus-container
+            p.name Text Field
+            p.condition Hover / Focus
+            include ../blocks/Form-Elements/text-field-default/text-field-default
+        .colomn2
+        .colomn3
+        .comment
