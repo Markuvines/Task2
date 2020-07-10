@@ -1,4 +1,9 @@
 .plus-button {
-  @import './__circle/plus-button__circle.scss';
-  @import './__dash/plus-button__plus.scss';
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
