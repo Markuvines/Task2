@@ -1,0 +1,10 @@
+&__item {
+  display: flex;
+  align-items: center;
+}
+.dopdown-guests__item:nth-child(1) {
+  margin-bottom: 7px;
+}
+.dopdown-guests__item:nth-child(2) {
+  margin-bottom: 7px;
+}
