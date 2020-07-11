@@ -22,10 +22,15 @@ html(lang="ru")
             p.condition Hover / Focus
             include ../blocks/Form-Elements/text-field-default/text-field-default
           .dropdown
-            p.name Text Field
-            p.condition Hover / Focus
-            form.dopdown-guests
-              include ../blocks/Form-Elements/dopdown-guests/dopdown-guests
+            p.name Dropdown
+            p.condition Default
+            input(class="dropdown__field text-field-default" type="text" value="Сколько гостей" disabled)
+            .dropdown__arrow
+              img(src="./src/img/expand_more.svg", alt="стрелка")
+          .masked-text-field-container
+            p.name masked text field
+            p.condition Default
+            include ../blocks//Form-Elements/masked-text-field/masked-text-field
         .colomn2
         .colomn3
         .comment
