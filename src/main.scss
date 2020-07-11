@@ -138,6 +138,7 @@ input[type="reset"] {
   }
 }
 .masked-text-field-container {
+  margin-bottom: 40px;
   .name {
     margin-top: 3px;
     display: inline-block;
@@ -151,5 +152,36 @@ input[type="reset"] {
   }
   .masked-text-field{
     padding-top: 0px;
+  }
+}
+.date-dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 41px;
+  .placeholder {
+    position: relative;
+    flex-basis: 150px;
+  }
+  .actual {
+    position: relative;
+    flex-basis: 150px;
+  }
+  .name {
+    margin-bottom: 5.44px;
+  }
+  .text-field-default {
+    padding: 0 0 3px 14px;
+    font-size: 14px;
+  }
+}
+.filter-date-dropdown-container {
+  width: 266px;
+  position: relative;
+  .name {
+    margin-bottom: 5px;
+  }
+  .filter-date-dropdown {
+    font-size: 14px;
+    padding-bottom: 3px;
   }
 }
