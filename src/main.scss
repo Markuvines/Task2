@@ -37,6 +37,7 @@ input[type="reset"] {
 @import './blocks/Form-Elements/plus-button/plus-button.scss';
 @import './blocks/Form-Elements/masked-text-field/masked-text-field.scss';
 @import './blocks/Form-Elements/dopdown-guests/dopdown-guests.scss';
+@import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -177,11 +178,22 @@ input[type="reset"] {
 .filter-date-dropdown-container {
   width: 266px;
   position: relative;
+  margin-bottom: 41px;
   .name {
     margin-bottom: 5px;
   }
   .filter-date-dropdown {
     font-size: 14px;
+    padding-bottom: 3px;
+  }
+}
+.subscription-text-field-container {
+  margin-left: -1px;
+  .name {
+    margin-bottom: 5px;
+    margin-left: 1px;
+  }
+  .text-field-default {
     padding-bottom: 3px;
   }
 }
