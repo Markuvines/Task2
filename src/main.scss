@@ -189,6 +189,7 @@ input[type="reset"] {
   }
 }
 .subscription-text-field-container {
+  margin-bottom: 100px;
   margin-left: -1px;
   .name {
     margin-bottom: 5px;
@@ -198,6 +199,16 @@ input[type="reset"] {
     padding-bottom: 3px;
   }
 }
-.dropdown-room-container {
+.dropdown-room-container-default {
   width: 266px;
+  margin-left: -1px;
+  .name {
+    display: inline-block;
+    float: left;
+    margin-bottom: 5px;
+  }
+  .condition {
+    font-size: 12px;
+    float: right;
+  }
 }
