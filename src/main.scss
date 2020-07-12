@@ -37,6 +37,7 @@ input[type="reset"] {
 @import './blocks/Form-Elements/plus-button/plus-button.scss';
 @import './blocks/Form-Elements/masked-text-field/masked-text-field.scss';
 @import './blocks/Form-Elements/dopdown-guests/dopdown-guests.scss';
+@import './blocks/Form-Elements/dropdown-room/dropdown-room.scss';
 @import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
 .formElements{
   position: relative;
@@ -196,4 +197,7 @@ input[type="reset"] {
   .text-field-default {
     padding-bottom: 3px;
   }
+}
+.dropdown-room-container {
+  width: 266px;
 }
