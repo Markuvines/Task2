@@ -1,0 +1,14 @@
+.dropdown-room {
+  @import '../minus-button/minus-button.scss';
+  @import '../plus-button/plus-button.scss';
+  @import './__arrow/dopdown-guests__arrow.scss';
+  @import './__dropdown-field/dopdown-guests__dropdown-field.scss';
+  @import './__dropdown-body/dopdown-guests__dropdown-body.scss';
+  @import './__list/dopdown-guests__list.scss';
+  @import './__item/dopdown-guests__item.scss';
+  @import './__item-name/dopdown-guests__item-name.scss';
+  @import './__minus-button/dopdown-guests__minus-button.scss';
+  @import './__count/dopdown-guests__count.scss';
+  @import './__text-field-default/dopdown-guests__text-field-default.scss';
+  @import './__text-field-default/--active/dopdown-guests__text-field-default--active.scss';
+}

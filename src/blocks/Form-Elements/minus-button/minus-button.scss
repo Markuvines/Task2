@@ -1,4 +1,5 @@
 .minus-button {
+  @import './--fill/minus-button--fill.scss';
   width: 30px;
   height: 30px;
   border: 1px solid rgba(31, 32, 65, 0.1);
