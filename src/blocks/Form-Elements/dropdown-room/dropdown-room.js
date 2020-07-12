@@ -9,7 +9,6 @@ $( document ).ready(function() {
     var $beds = $('.beds').children('.dropdown-room__count').text();
     var $bedrooms = $('.bedrooms').children('.dropdown-room__count').text();
     $('.dropdown-room__text-field-default').val($bedrooms + ' cпальни, ' + $beds + ' кровати...')
-    console.log ($baths,$bedrooms,$beds);
   });
   $('.minus-button').on('click',function(){
     var count = $(this).siblings('.dropdown-room__count').text();
