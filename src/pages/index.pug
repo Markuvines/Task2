@@ -54,6 +54,12 @@ html(lang="ru")
           .dropdown-room-container-default
             p.name dropdown
             p.condition Default
+            input(class="text-field-default dropdown-default" type="text" value="2 спальни, 2 кровати..." disabled)
+            .arrow
+              img(src="./src/img/expand_more.svg", alt="стрелка")
+          .dropdown-room-container-expanded
+            p.name dropdown
+            p.condition expanded
             form.dropdown-room
               include ../blocks/Form-Elements/dropdown-room/dropdown-room
         .colomn2

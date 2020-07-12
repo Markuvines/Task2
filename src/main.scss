@@ -189,7 +189,7 @@ input[type="reset"] {
   }
 }
 .subscription-text-field-container {
-  margin-bottom: 100px;
+  margin-bottom: 101px;
   margin-left: -1px;
   .name {
     margin-bottom: 5px;
@@ -202,10 +202,40 @@ input[type="reset"] {
 .dropdown-room-container-default {
   width: 266px;
   margin-left: -1px;
+  margin-bottom: 21px;
+  position: relative;
   .name {
     display: inline-block;
     float: left;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
+  }
+  .condition {
+    font-size: 12px;
+    float: right;
+  }
+  .dropdown-default {
+    padding-bottom: 3px;
+    border-radius: 4px 4px 0 0;
+    font-size: 14px;
+  }
+  .arrow {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.dropdown-room-container-expanded {
+  width: 266px;
+  margin-left: -1px;
+  .name {
+    display: inline-block;
+    float: left;
+    margin-bottom: 4px;
   }
   .condition {
     font-size: 12px;
