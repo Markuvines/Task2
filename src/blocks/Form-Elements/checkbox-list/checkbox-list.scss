@@ -1,0 +1,40 @@
+.checkbox-list {
+  @import './__checkbox-item/checkbox-list__checkbox-item.scss';
+  
+  &__field {
+    // height: 44px;
+  }
+  &__title{
+    // margin-bottom: 15px;
+    margin-right: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #1F2041;
+  }
+  &__arroy{
+    display: inline-flex;
+    width: 44px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    transition-duration:0.5s;
+  }
+  &__arroy--rotate{
+    transform: rotate(180deg);
+  }
+  &__body{
+    display: none;
+    height: 173px;
+  }
+  &__checkbox-menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+  }
+}
