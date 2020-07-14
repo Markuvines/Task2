@@ -1,0 +1,14 @@
+mixin custom-checkbox(title)
+  label(class="custom-checkbox")
+    input(type="checkbox")
+    span=title
+mixin checkbox-list(...items)
+  .checkbox-list__field
+    span.checkbox-list__title expandable checkbox list
+    .checkbox-list__arroy
+      img(src="./src/img/expand_more.svg", alt="стрелка")
+  .checkbox-list__body
+    ul.checkbox-list__checkbox-menu
+      each item in items
+        li.checkbox-list__checkbox-item
+          +custom-checkbox(item)
