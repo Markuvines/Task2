@@ -39,6 +39,8 @@ input[type="reset"] {
 @import './blocks/Form-Elements/dopdown-guests/dopdown-guests.scss';
 @import './blocks/Form-Elements/dropdown-room/dropdown-room.scss';
 @import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
+@import './blocks/Form-Elements/custom-checkbox/custom-checkbox.scss';
+@import './blocks/Form-Elements/checkbox-list/checkbox-list.scss';
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -232,6 +234,7 @@ input[type="reset"] {
 .dropdown-room-container-expanded {
   width: 266px;
   margin-left: -1px;
+  margin-bottom: 40.44px;
   .name {
     display: inline-block;
     float: left;
