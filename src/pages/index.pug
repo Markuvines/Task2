@@ -8,6 +8,7 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Form-Elements
   body 
+    include ./mixins
     .formElements
       .emblem
         include ../blocks/emblem/emblem
@@ -62,6 +63,10 @@ html(lang="ru")
             p.condition expanded
             form.dropdown-room
               include ../blocks/Form-Elements/dropdown-room/dropdown-room
+            .checkbox-list-default-container
+              +checkbox-list()
+            .checkbox-list-expanded-container
+              +checkbox-list("Завтрак","Письменный стол","Стул для кормления","Кроватка", "Телевизор","Шампунь")
         .colomn2
         .colomn3
         .comment
