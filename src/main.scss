@@ -44,7 +44,7 @@ input[type="reset"] {
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
-  width: 1440px;
+  max-width: 1440px;
   height: 1853px;
   background: #FFFFFF;
 }
@@ -104,7 +104,9 @@ input[type="reset"] {
   }
   width: 320px;
   .name {
-    display: inline-block;
+    // display: inline-block;
+    margin-top: 1px;
+    float: left;
   }
   .condition {
     font-size: 11.7px;
@@ -139,6 +141,9 @@ input[type="reset"] {
   &__field {
     padding-top: 0.5px;
     font-size: 14px;
+  }
+  .text-field-default {
+    padding-bottom: 3px;
   }
 }
 .masked-text-field-container {
@@ -234,7 +239,7 @@ input[type="reset"] {
 .dropdown-room-container-expanded {
   width: 266px;
   margin-left: -1px;
-  margin-bottom: 40.44px;
+  margin-bottom: 38px;
   .name {
     display: inline-block;
     float: left;
@@ -243,5 +248,61 @@ input[type="reset"] {
   .condition {
     font-size: 12px;
     float: right;
+  }
+}
+.checkbox-list-default-container {
+  margin-bottom: 15px;
+}
+.checkbox-list-expanded-container{
+  margin-left: -1px;
+  margin-bottom: 98.56px;
+}
+.features-container {
+  width: 291px;
+  margin-left: -1px;
+  .comfort {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .img-wrap{
+    display: inline-flex;
+    margin-right: 10px;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    width: 200px;
+    display: inline-block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+
+    /* Dark 75% */
+
+    color: rgba(31, 32, 65, 0.75);
+  }
+  .text::first-line {
+    font-weight: bold;
+  }
+  .line {
+    width: 280px;
+    height: 1px;
+    background: rgba(31, 32, 65, 0.1);
+    margin-bottom: 20px;
+  }
+  .windows {
+    display: flex;
+    margin-bottom: 20px;
+    .img-wrap {
+      align-items: baseline;
+      padding-top: 4px;
+    }
   }
 }

@@ -63,10 +63,21 @@ html(lang="ru")
             p.condition expanded
             form.dropdown-room
               include ../blocks/Form-Elements/dropdown-room/dropdown-room
-            .checkbox-list-default-container
-              +checkbox-list()
-            .checkbox-list-expanded-container
-              +checkbox-list("Завтрак","Письменный стол","Стул для кормления","Кроватка", "Телевизор","Шампунь")
+          .checkbox-list-default-container
+            +checkbox-list()
+          .checkbox-list-expanded-container
+            +checkbox-list("Завтрак","Письменный стол","Стул для кормления","Кроватка", "Телевизор","Шампунь")
+          .features-container
+            .comfort
+              .img-wrap 
+                img(src="./src/img/insert_emoticon.svg", alt="улыбка")
+              p.text Комфорт Шумопоглощающие стены
+            .line
+            .windows
+              .img-wrap 
+                img(src="./src/img/location_city.svg", alt="дом")
+              p.text Удобство <br>Окно в каждой из спален
+            .line
         .colomn2
         .colomn3
         .comment
