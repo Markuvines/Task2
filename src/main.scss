@@ -41,6 +41,7 @@ input[type="reset"] {
 @import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
 @import './blocks/Form-Elements/custom-checkbox/custom-checkbox.scss';
 @import './blocks/Form-Elements/checkbox-list/checkbox-list.scss';
+@import './blocks/Form-Elements/custom-radio-button/custom-radio-button.scss';
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -317,11 +318,12 @@ input[type="reset"] {
 }
 .checkbox-buttons-container {
   width: 69.375%;
+  margin-bottom: 41.88px;
   .name {
     margin-bottom: 16.56px;
   }
   .checkbox-buttons-list {
-    height: 114.12px;
+    // height: 114.12px;
     display: flex;
     flex-direction: column;
   }
@@ -330,5 +332,15 @@ input[type="reset"] {
   }
   li:first-child+li {
     margin-bottom: 10.56px;
+  }
+}
+.radio-buttons-container {
+  .name {
+    margin-bottom: 15px;
+  }
+  .radio-buttons {
+    max-width: 220.74px;
+    display: flex;
+    justify-content: space-between;
   }
 }
