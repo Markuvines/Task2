@@ -44,7 +44,7 @@ input[type="reset"] {
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
-  max-width: 1440px;
+  width: 1440px;
   height: 1853px;
   background: #FFFFFF;
 }
@@ -57,7 +57,8 @@ input[type="reset"] {
 }
 .container {
   margin: 0 141px 131px 0;
-  width: 320px;
+  max-width: 1159px;
+  display: flex;
 }
 
 .name {
@@ -83,6 +84,14 @@ input[type="reset"] {
   position: relative;
   display: flex;
   flex-direction: column;
+  width: 320px;
+  margin-right: 126px;
+}
+.colomn2 {
+  padding-top: 3px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
 }
 
 .text-field-default-container{
@@ -304,5 +313,22 @@ input[type="reset"] {
       align-items: baseline;
       padding-top: 4px;
     }
+  }
+}
+.checkbox-buttons-container {
+  width: 69.375%;
+  .name {
+    margin-bottom: 16.56px;
+  }
+  .checkbox-buttons-list {
+    height: 114.12px;
+    display: flex;
+    flex-direction: column;
+  }
+  li:first-child {
+    margin-bottom: 10px;
+  }
+  li:first-child+li {
+    margin-bottom: 10.56px;
   }
 }
