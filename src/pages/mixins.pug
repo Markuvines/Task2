@@ -1,8 +1,8 @@
 mixin custom-checkbox(title)
   label(class="custom-checkbox")
     input(type="checkbox")
-    .fake
-    span=title
+    .custom-checkbox_fake
+    span.custom-checkbox__text=title
 mixin checkbox-list(...items)
   .checkbox-list__field
     span.checkbox-list__title expandable checkbox list
@@ -13,3 +13,8 @@ mixin checkbox-list(...items)
       each item in items
         li.checkbox-list__checkbox-item
           +custom-checkbox(item)
+mixin custom-radio-button(title,group)
+  label(class="custom-radio-button")
+    input(type="radio" name=group)
+    .custom-radio-button__fake
+    span.custom-radio-button__text=title
