@@ -25,3 +25,8 @@ mixin toggle-item(text)
   .toggle.toggle-item__toggle
     +toggle
   p.toggle-item__text=text
+mixin like-button(number)
+  .like-button__body
+  .like-button__like
+    img(src="./src/img/favorite_border.svg" alt="лайк")
+  .like-button__count=number
