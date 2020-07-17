@@ -44,6 +44,7 @@ input[type="reset"] {
 @import './blocks/Form-Elements/custom-radio-button/custom-radio-button.scss';
 @import './blocks/Form-Elements/toggle/toggle.scss';
 @import './blocks/Form-Elements/toggle-item/toggle-item.scss';
+@import './blocks/Form-Elements/like-button/like-button.scss';
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -350,6 +351,7 @@ input[type="reset"] {
 .toggle-container {
   width: 81.25%;
   height: 89px;
+  margin-bottom: 44.44px;
   .name {
     margin-bottom: 16px;
     font-size: 11.5px;
