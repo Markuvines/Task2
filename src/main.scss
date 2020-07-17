@@ -351,12 +351,26 @@ input[type="reset"] {
 .toggle-container {
   width: 81.25%;
   height: 89px;
-  margin-bottom: 44.44px;
+  margin-bottom: 40.44px;
   .name {
     margin-bottom: 16px;
     font-size: 11.5px;
   }
   .toggle-item:first-child {
     margin-bottom: 14px;
+  }
+}
+.like-buttos-container {
+  width: 89.72px;
+  height: 51px;
+  .name {
+    margin-bottom: 16px;
+    // font-size: 11.5px;
+  }
+  .like-buttons {
+    display: flex;
+  }
+  .like-button:first-child {
+    margin-right: 10px;
   }
 }
