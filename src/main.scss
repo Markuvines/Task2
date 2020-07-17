@@ -42,6 +42,8 @@ input[type="reset"] {
 @import './blocks/Form-Elements/custom-checkbox/custom-checkbox.scss';
 @import './blocks/Form-Elements/checkbox-list/checkbox-list.scss';
 @import './blocks/Form-Elements/custom-radio-button/custom-radio-button.scss';
+@import './blocks/Form-Elements/toggle/toggle.scss';
+@import './blocks/Form-Elements/toggle-item/toggle-item.scss';
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -335,6 +337,7 @@ input[type="reset"] {
   }
 }
 .radio-buttons-container {
+  margin-bottom: 41.56px;
   .name {
     margin-bottom: 15px;
   }
@@ -342,5 +345,16 @@ input[type="reset"] {
     max-width: 220.74px;
     display: flex;
     justify-content: space-between;
+  }
+}
+.toggle-container {
+  width: 81.25%;
+  height: 89px;
+  .name {
+    margin-bottom: 16px;
+    font-size: 11.5px;
+  }
+  .toggle-item:first-child {
+    margin-bottom: 14px;
   }
 }
