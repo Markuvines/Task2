@@ -18,3 +18,10 @@ mixin custom-radio-button(title,group)
     input(type="radio" name=group)
     .custom-radio-button__fake
     span.custom-radio-button__text=title
+mixin toggle()
+  .toggle__body
+    .toggle__circle
+mixin toggle-item(text)
+  .toggle.toggle-item__toggle
+    +toggle
+  p.toggle-item__text=text
