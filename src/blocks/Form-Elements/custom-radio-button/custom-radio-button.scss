@@ -31,8 +31,10 @@
   content: '';
   width: 12px;
   height: 12px;
-  background-repeat: no-repeat;
-  background-image: url("img/circle.svg");
+  // background-repeat: no-repeat;
+  // background-image: url("img/circle.svg");
+  border-radius: 50%;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
   opacity: 0;
 }
 .custom-radio-button>input:checked + .custom-radio-button__fake::before {
