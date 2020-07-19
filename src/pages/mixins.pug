@@ -30,3 +30,10 @@ mixin like-button(number)
   .like-button__like
     img(src="./src/img/favorite_border.svg" alt="лайк")
   .like-button__count=number
+mixin star-rate()
+  ul.star-rate__list
+    -for (var i=1; i<=5; i++)
+      li.star-rate__item
+        .star-rate__star
+          img(class="star-rate__back" src="./src/img/star_border.svg", alt="alt")
+          img(class="star-rate__front" src="./src/img/star.svg", alt="alt")
