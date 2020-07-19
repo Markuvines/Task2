@@ -380,4 +380,10 @@ input[type="reset"] {
   .name {
     margin-bottom: 16px;
   }
+  .star-rates {
+    display: flex;
+  }
+  .star-rate:first-child {
+    margin-right: 20px;
+  }
 }
