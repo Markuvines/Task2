@@ -31,12 +31,11 @@ input[type="reset"] {
   padding: 0;
 
 }
-
 @import './blocks/Form-Elements/text-field-default/text-field-default.scss';
 @import './blocks/Form-Elements/minus-button/minus-button.scss';
 @import './blocks/Form-Elements/plus-button/plus-button.scss';
 @import './blocks/Form-Elements/masked-text-field/masked-text-field.scss';
-@import './blocks/Form-Elements/dopdown-guests/dopdown-guests.scss';
+@import './blocks/Form-Elements/dopdown-guests/dropdown-guests.scss';
 @import './blocks/Form-Elements/dropdown-room/dropdown-room.scss';
 @import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
 @import './blocks/Form-Elements/custom-checkbox/custom-checkbox.scss';
@@ -376,7 +375,8 @@ input[type="reset"] {
     margin-right: 10px;
   }
 }
-.star-rate-container{
+.star-rate-container {
+  margin-bottom: 50px;
   .name {
     margin-bottom: 16px;
   }

@@ -1,3 +1,66 @@
+mixin minus-button()
+  img(src="./src/img/minus.svg")
+mixin plus-button()
+  img(src="./src/img/plus.svg")
+mixin dropdown-room()
+  .dropdown-room__dropdown-field
+    .dropdown-room__arrow
+      img(src="./src/img/expand_more.svg", alt="стрелка")
+    input(class="text-field-default dropdown-room__text-field-default" type="text" value ="Особенности номера" disabled )
+  .dropdown-room__dropdown-body
+    ul.dropdown-room__list
+      li.dropdown-room__item.bedrooms
+          .dropdown-room__item-name спальни
+          .dropdown-room__minus-button.minus-button
+            +minus-button()
+          .dropdown-room__count 0
+          .dropdown-room__plus-button.plus-button
+            +plus-button()
+      li.dropdown-room__item.beds
+          .dropdown-room__item-name кровати
+          .dropdown-room__minus-button.minus-button
+            +minus-button()
+          .dropdown-room__count 0
+          .dropdown-room__plus-button.plus-button
+            +plus-button()
+      li.dropdown-room__item.baths
+          .dropdown-room__item-name ванные комнаты
+          .dropdown-room__minus-button.minus-button
+            +minus-button()
+          .dropdown-room__count 0
+          .dropdown-room__plus-button.plus-button
+            +plus-button()
+mixin dropdown-guests()
+  .dropdown-guests__dropdown-field
+    .dropdown-guests__arrow
+      img(src="./src/img/expand_more.svg", alt="стрелка")
+    input(class="text-field-default dropdown-guests__text-field-default" type="text" value ="Сколько гостей" disabled )
+  .dropdown-guests__dropdown-body
+    ul.dropdown-guests__list
+      li.dropdown-guests__item
+          .dropdown-guests__item-name взрослые
+          .dropdown-guests__minus-button.minus-button
+            +minus-button()
+          .dropdown-guests__count 0
+          .dropdown-guests__plus-button.plus-button
+            +plus-button()
+      li.dropdown-guests__item
+          .dropdown-guests__item-name дети
+          .dropdown-guests__minus-button.minus-button
+            +minus-button()
+          .dropdown-guests__count 0
+          .dropdown-guests__plus-button.plus-button
+            +plus-button()
+      li.dropdown-guests__item
+          .dropdown-guests__item-name младенцы
+          .dropdown-guests__minus-button.minus-button
+            +minus-button()
+          .dropdown-guests__count 0
+          .dropdown-guests__plus-button.plus-button
+            +plus-button()
+    .dropdown-guests__reset-submit
+      input(class="dropdown-guests__reset" type="reset", value="очистить")
+      input(class="dropdown-guests__submit" type="submit", value="применить")
 mixin custom-checkbox(title)
   label(class="custom-checkbox")
     input(type="checkbox")

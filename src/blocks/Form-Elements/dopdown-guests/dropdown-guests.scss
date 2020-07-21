@@ -1,0 +1,17 @@
+.dropdown-guests {
+  @import '../minus-button/minus-button.scss';
+  @import '../plus-button/plus-button.scss';
+  @import './__arrow/dropdown-guests__arrow.scss';
+  @import './__dropdown-field/dropdown-guests__dropdown-field.scss';
+  @import './__dropdown-body/dropdown-guests__dropdown-body.scss';
+  @import './__list/dropdown-guests__list.scss';
+  @import './__item/dropdown-guests__item.scss';
+  @import './__item-name/dropdown-guests__item-name.scss';
+  @import './__minus-button/dropdown-guests__minus-button.scss';
+  @import './__count/dropdown-guests__count.scss';
+  @import './__reset-submit/dropdown-guests__reset-submit.scss';
+  @import './__submit/dropdown-guests__submit.scss';
+  @import './__reset/dropdown-guests__reset.scss';
+  @import './__text-field-default/dropdown-guests__text-field-default.scss';
+  @import './__text-field-default/--active/dropdown-guests__text-field-default--active.scss';
+}
