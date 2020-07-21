@@ -5,6 +5,7 @@ html(lang="ru")
     link(rel="stylesheet", href="reset.css")
     link(rel="stylesheet", href="app.css")
     link(rel="stylesheet", href="fonts.css")
+    link(rel="stylesheet", href="asRange.css")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title Form-Elements
   body 
@@ -55,14 +56,16 @@ html(lang="ru")
           .dropdown-room-container-default
             p.name dropdown
             p.condition Default
-            input(class="text-field-default dropdown-default" type="text" value="2 спальни, 2 кровати..." disabled)
-            .arrow
-              img(src="./src/img/expand_more.svg", alt="стрелка")
+            form.dropdown-room
+              +dropdown-room()
+            //- input(class="text-field-default dropdown-default" type="text" value="2 спальни, 2 кровати..." disabled)
+            //- .arrow
+            //-   img(src="./src/img/expand_more.svg", alt="стрелка")
           .dropdown-room-container-expanded
             p.name dropdown
             p.condition expanded
             form.dropdown-room
-              include ../blocks/Form-Elements/dropdown-room/dropdown-room
+              +dropdown-room()
           .checkbox-list-default-container
             +checkbox-list()
           .checkbox-list-expanded-container
@@ -108,14 +111,20 @@ html(lang="ru")
               .like-button(data-status="disabled")
                 +like-button(11)
           .star-rate-container
-            h3.name like button
+            h3.name rate button
             .star-rates
               .star-rate
                 +star-rate()
               .star-rate
                 +star-rate()
+          .dropdown-guests-container-expanded
+            p.name dropdown
+            p.condition expanded
+            form.dropdown-guests
+              +dropdown-guests()
         .colomn3
         .comment
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    script(src="../JsSlider/jquery-asRange.js")
     script(src="../Form-Elements.js")
