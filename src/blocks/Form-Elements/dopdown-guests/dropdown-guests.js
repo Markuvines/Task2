@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   var guests = 0;
-  $('.plus-button').on('click',function(){
+  $('.dropdown-guests__plus-button').on('click',function(){
     var count = $(this).siblings('.dropdown-guests__count').text();
     ++count;
     $(this).siblings('.dropdown-guests__count').text(count);
@@ -13,7 +13,7 @@ $( document ).ready(function() {
           else
             $('.dropdown-guests__text-field-default').val(guests + ' гостей');
   });
-  $('.minus-button').on('click',function(){
+  $('.dropdown-guests__minus-button').on('click',function(){
     var count = $(this).siblings('.dropdown-guests__count').text();
     --count;
     if (count<0)
