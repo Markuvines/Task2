@@ -1,6 +1,6 @@
 $( document ).ready(function() {
   // var $bedrooms = $('.bedrooms').children('.dropdown-room__count').text();
-  $('.plus-button').on('click',function(){
+  $('.dropdown-room__plus-button').on('click',function(){
     var count = $(this).siblings('.dropdown-room__count').text();
     ++count;
     $(this).siblings('.minus-button').addClass('minus-button--fill')
@@ -9,7 +9,7 @@ $( document ).ready(function() {
     var $bedrooms = $(this).parents('.dropdown-room__list').find('.bedrooms').children('.dropdown-room__count').text();
     $(this).parents('.dropdown-room__dropdown-body').siblings('.dropdown-room__dropdown-field').children('.dropdown-room__text-field-default').val($bedrooms + ' cпальни, ' + $beds + ' кровати...')
   });
-  $('.minus-button').on('click',function(){
+  $('.dropdown-room__minus-button').on('click',function(){
     var count = $(this).siblings('.dropdown-room__count').text();
     --count;
     if (count<=0)
