@@ -66,6 +66,13 @@ mixin custom-checkbox(title)
     input(type="checkbox")
     .custom-checkbox_fake
     span.custom-checkbox__text=title
+mixin rich-checkbox(title,discription)
+  label(class="rich-checkbox")
+    input(type="checkbox")
+    .rich-checkbox_fake
+    .rich-checkbox__wraper
+      p.rich-checkbox__text=title
+      p.rich-checkbox__discription=discription
 mixin checkbox-list(...items)
   .checkbox-list__field
     span.checkbox-list__title expandable checkbox list
