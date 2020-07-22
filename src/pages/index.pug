@@ -121,6 +121,13 @@ html(lang="ru")
             p.name dropdown
             form.dropdown-guests
               +dropdown-guests()
+          .rich-checkbox-buttons-container
+            h3.name rich Checkbox Buttons
+            ul.checkbox-buttons-list
+              li
+                +rich-checkbox("Широкий коридор", "Ширина коридоров в номере не менее 91 см.")
+              li
+                +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
         .colomn3
         .comment
 
