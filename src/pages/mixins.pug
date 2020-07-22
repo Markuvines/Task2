@@ -41,21 +41,21 @@ mixin dropdown-guests()
           .dropdown-guests__item-name взрослые
           .dropdown-guests__minus-button.minus-button
             +minus-button()
-          .dropdown-guests__count 0
+          .dropdown-guests__count(data-adults="adults") 0
           .dropdown-guests__plus-button.plus-button
             +plus-button()
       li.dropdown-guests__item
           .dropdown-guests__item-name дети
           .dropdown-guests__minus-button.minus-button
             +minus-button()
-          .dropdown-guests__count 0
+          .dropdown-guests__count(data-children="children") 0
           .dropdown-guests__plus-button.plus-button
             +plus-button()
       li.dropdown-guests__item
           .dropdown-guests__item-name младенцы
           .dropdown-guests__minus-button.minus-button
             +minus-button()
-          .dropdown-guests__count 0
+          .dropdown-guests__count(data-child="child") 0
           .dropdown-guests__plus-button.plus-button
             +plus-button()
     .dropdown-guests__reset-submit
