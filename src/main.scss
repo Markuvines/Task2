@@ -93,12 +93,18 @@ input[type="reset"] {
   margin-right: 126px;
 }
 .colomn2 {
+  margin-right: 72px;
   padding-top: 3px;
   display: flex;
   flex-direction: column;
   width: 320px;
 }
-
+.colomn3 {
+  padding-top: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
 .text-field-default-container{
   margin-bottom: 20px;
   .name {
@@ -407,5 +413,24 @@ input[type="reset"] {
   }
   .checkbox-buttons-list li:first-child .rich-checkbox__discription {
     width: 203px;
+  }
+}
+.range-slider-container {
+  width: 266px;
+  margin-bottom: 40.56px;
+  .name {
+    display: inline-block;
+    margin-right: 69.74px;
+    margin-bottom:  23px;
+  }
+  .range {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    text-transform: uppercase;
+    color: rgba(31, 32, 65, 0.5);
   }
 }
