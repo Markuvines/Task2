@@ -454,8 +454,14 @@ input[type="reset"] {
   }
   .buttons-else {
     display: flex;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     .button-else:first-child {
+      margin-right: 20px;
+    }
+  }
+  .submit-reset-buttons {
+    margin-bottom: 30px;
+    input:first-child {
       margin-right: 20px;
     }
   }
