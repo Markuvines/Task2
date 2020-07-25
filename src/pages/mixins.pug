@@ -3,6 +3,10 @@ mixin button-default(text)
 mixin button-else (text)
   .button-else__body
     .button-else__text= text
+mixin big-button-arrow(text)
+  .big-button-arrow__arrow
+    img(src="./src/img/arrow_forward-white.svg", alt="стрелка")
+  .big-button-arrow__text=text
 mixin minus-button()
   img(src="./src/img/minus.svg")
 mixin plus-button()

@@ -1,0 +1,10 @@
+.big-button-arrow {
+  @import './__text/big-button-arrow__arrow.scss';
+  @import './__arrow/big-button-arrow__text.scss';
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  position: relative;
+}
+.big-button-arrow:hover {
+  opacity: 0.5;
+}
