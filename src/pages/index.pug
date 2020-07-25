@@ -133,6 +133,23 @@ html(lang="ru")
             .name Range Slider
             span.range
             .polzunok
+          .buttons-container
+            .name buttons
+            .buttons-default
+              .button-default
+                +button-default('Click me')
+              .button-default
+                +button-default('Click me')
+            .buttons-else
+              .button-else
+                +button-else('CLICK ME')
+              .button-else
+                +button-else('CLICK ME')
+            .submit-reset-buttons
+              input(type="submit", value="CLICK ME")
+              input(type="reset", value="CLICK ME")
+            .big-button-arrow
+              +big-button-arrow('перейти к оплате')
         .comment
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

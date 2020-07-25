@@ -29,7 +29,10 @@ input[type="reset"] {
   border-width: 0px;
   color: rgba(31, 32, 65, 0.5);
   padding: 0;
-
+}
+@mixin button-w-h($width,$height) {
+  width: $width ;
+  height: $height;
 }
 @import './blocks/Form-Elements/text-field-default/text-field-default.scss';
 @import './blocks/Form-Elements/minus-button/minus-button.scss';
@@ -46,6 +49,10 @@ input[type="reset"] {
 @import './blocks/Form-Elements/toggle-item/toggle-item.scss';
 @import './blocks/Form-Elements/like-button/like-button.scss';
 @import './blocks/Form-Elements/star-rate/star-rate.scss';
+@import './blocks/button-default/button-default';
+@import './blocks/button-else/button-else.scss';
+@import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
+
 .formElements{
   position: relative;
   padding: 140px 0 0 141px;
@@ -417,7 +424,7 @@ input[type="reset"] {
 }
 .range-slider-container {
   width: 266px;
-  margin-bottom: 40.56px;
+  margin-bottom: 44px;
   .name {
     display: inline-block;
     margin-right: 69.74px;
@@ -432,5 +439,24 @@ input[type="reset"] {
     text-align: right;
     text-transform: uppercase;
     color: rgba(31, 32, 65, 0.5);
+  }
+}
+.buttons-container {
+  .name {
+    margin-bottom: 16px;
+  }
+  .buttons-default {
+    display: flex;
+    margin-bottom: 30px;
+    .button-default:first-child {
+      margin-right: 19px;
+    }
+  }
+  .buttons-else {
+    display: flex;
+    margin-bottom: 31px;
+    .button-else:first-child {
+      margin-right: 20px;
+    }
   }
 }
