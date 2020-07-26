@@ -116,3 +116,12 @@ mixin star-rate()
         .star-rate__star
           img(class="star-rate__back" src="./src/img/star_border.svg", alt="alt")
           img(class="star-rate__front" src="./src/img/star.svg", alt="alt")
+mixin bullet-list (text)
+  h3.bullet-list__name=text
+  ul.bullet-list__menu
+    li.bullet-list__item Нельзя с питомцами
+    li.bullet-list__item Без вечеринок и мероприятий
+    li.bullet-list__item
+      | Время прибытия — после 13:00,
+      br
+      | а выезд до 12:00
