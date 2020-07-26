@@ -150,6 +150,13 @@ html(lang="ru")
               input(type="reset", value="CLICK ME")
             .big-button-arrow
               +big-button-arrow('перейти к оплате')
+          .second-dropdown-guests-container-expanded
+            p.name dropdown
+            form.dropdown-guests
+              +dropdown-guests()
+          .bullet-list-container
+            .bullet-list
+              +bullet-list("bullet list")
         .comment
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
