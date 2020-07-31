@@ -1,5 +1,7 @@
 mixin emblem()
   img(src="./src/img/emblem.svg", alt="эмблема")
+mixin text-field-default(placeholder)
+  input(class="text-field-default" type="text" placeholder=placeholder)
 mixin button-default(text)
   .button-default__text=text
 mixin button-else (text)
@@ -143,7 +145,7 @@ mixin room-selection()
         input(class="room-selection__date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
         .room-selection__dropdown-arrow
           img(src="./src/img/expand_more.svg", alt="стрелка")
-    form.dropdown-guests.room-selection__dropdown-guests
+    .dropdown-guests.room-selection__dropdown-guests
       +dropdown-guests('гости')
     button.big-button-arrow.room-selection__big-button-arrow
       +big-button-arrow("подобрать номер")
