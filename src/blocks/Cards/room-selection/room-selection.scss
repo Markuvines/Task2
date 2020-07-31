@@ -1,0 +1,14 @@
+.room-selection {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 40px 1.51041667vw 30px 1.51041667vw;
+  @import './__title/room-selection__title.scss';
+  @import './__dates/room-selection__dates.scss';
+  @import './__arrival/room-selection__arrival.scss';
+  @import './__departure/room-selection__departure.scss';
+  @import './__name/room-selection__name.scss';
+  @import './__dropdown-arrow/room-selection__dropdown-arrow.scss';
+  @import './__dropdown-guests/room-selection__dropdown-guests.scss';
+}
