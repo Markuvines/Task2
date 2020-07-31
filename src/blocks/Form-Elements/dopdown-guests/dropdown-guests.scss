@@ -1,4 +1,5 @@
 .dropdown-guests {
+  position: relative;
   @import '../minus-button/minus-button.scss';
   @import '../plus-button/plus-button.scss';
   @import './__arrow/dropdown-guests__arrow.scss';
@@ -14,4 +15,7 @@
   @import './__reset/dropdown-guests__reset.scss';
   @import './__text-field-default/dropdown-guests__text-field-default.scss';
   @import './__text-field-default/--active/dropdown-guests__text-field-default--active.scss';
+  &__title {
+    margin-bottom: 5px;
+  }
 }
