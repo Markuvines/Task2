@@ -12,7 +12,29 @@ html(lang="ru")
     include ./mixins
     .cards
       .emblem
-        include ../blocks/emblem/emblem
+        +emblem()
+      .container
+        .colomn1
+          .room-selection
+            .room-selection__wraper
+              h1.room-selection__title Найдём номера под ваши пожелания
+              .room-selection__dates
+                .room-selection__arrival
+                  h3.room-selection__name прибытие
+                  input(class="room-selection__date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
+                  .room-selection__dropdown-arrow
+                    img(src="./src/img/expand_more.svg", alt="стрелка")
+                .room-selection__departure
+                  h3.room-selection__name выезд
+                  input(class="room-selection__date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
+                  .room-selection__dropdown-arrow
+                    img(src="./src/img/expand_more.svg", alt="стрелка")
+              form.dropdown-guests.room-selection__dropdown-guests
+                +dropdown-guests('гости')
+              .big-button-arrow.room-selection__big-button-arrow
+                +big-button-arrow("подобрать номер")
+        .colomn2
+        .colomn3
     script(src="https://code.jquery.com/jquery-3.5.1.min.js")
     script(src="https://atuin.ru/demo/ui-slider/jquery-ui.min.js")
     script(src="../Form-Elements.js")

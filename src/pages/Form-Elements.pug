@@ -12,49 +12,49 @@ html(lang="ru")
     include ./mixins
     .formElements
       .emblem
-        include ../blocks/emblem/emblem
+        +emblem()
       .container
         .colomn1
           .text-field-default-container
-            p.name text field
+            h3.name text field
             p.condition default
             include ../blocks/Form-Elements/text-field-default/text-field-default
           .text-field-hover-focus-container
-            p.name Text Field
+            h3.name Text Field
             p.condition Hover / Focus
             include ../blocks/Form-Elements/text-field-default/text-field-default
           .dropdown
-            p.name Dropdown
+            h3.name Dropdown
             p.condition Default
             input(class="dropdown__field text-field-default" type="text" value="Сколько гостей" disabled)
             .dropdown__arrow
               img(src="./src/img/expand_more.svg", alt="стрелка")
           .masked-text-field-container
-            p.name masked text field
+            h3.name masked text field
             p.condition Default
             include ../blocks//Form-Elements/masked-text-field/masked-text-field
           .date-dropdown-container
             .placeholder
-              p.name date Dropdown
+              h3.name date Dropdown
               input(class="date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
               .dropdown__arrow
                 img(src="./src/img/expand_more.svg", alt="стрелка")
             .actual
-              p.name date Dropdown
+              h3.name date Dropdown
               input(class="date-dropdown text-field-default" type="text" value="19.08.2019")
               .dropdown__arrow
                 img(src="./src/img/expand_more.svg", alt="стрелка")
           .filter-date-dropdown-container
-            p.name filter date dropdown
+            h3.name filter date dropdown
             input(class="text-field-default filter-date-dropdown" type="text" value="19 авг - 23 авг")
             .dropdown__arrow
               img(src="./src/img/expand_more.svg", alt="стрелка")
           .subscription-text-field-container
-            p.name subscription text field
+            h3.name subscription text field
             .subscription-text-field
               include ../blocks/Form-Elements/subscription-text-field/subscription-text-field
           .dropdown-room-container-default
-            p.name dropdown
+            h3.name dropdown
             p.condition Default
             form.dropdown-room
               +dropdown-room()
@@ -62,7 +62,7 @@ html(lang="ru")
             //- .arrow
             //-   img(src="./src/img/expand_more.svg", alt="стрелка")
           .dropdown-room-container-expanded
-            p.name dropdown
+            h3.name dropdown
             p.condition expanded
             form.dropdown-room
               +dropdown-room()
@@ -107,9 +107,8 @@ html(lang="ru")
               .star-rate
                 +star-rate()
           .dropdown-guests-container-expanded
-            p.name dropdown
             form.dropdown-guests
-              +dropdown-guests()
+              +dropdown-guests("dropdown")
           .rich-checkbox-buttons-container
             h3.name rich Checkbox Buttons
             ul.checkbox-buttons-list
@@ -119,30 +118,29 @@ html(lang="ru")
                 +rich-checkbox("Помощник для инвалидов", "На 1 этаже вас встретит специалист и проводит до номера.")
         .colomn3
           .range-slider-container
-            .name Range Slider
+            h3.name Range Slider
             span.range
             .polzunok
           .buttons-container
-            .name buttons
+            h3.name buttons
             .buttons-default
-              .button-default
+              button.button-default
                 +button-default('Click me')
-              .button-default
+              button.button-default
                 +button-default('Click me')
             .buttons-else
-              .button-else
+              button.button-else
                 +button-else('CLICK ME')
-              .button-else
+              button.button-else
                 +button-else('CLICK ME')
             .submit-reset-buttons
-              input(type="submit", value="CLICK ME")
+              input(type="button", value="CLICK ME")
               input(type="reset", value="CLICK ME")
-            .big-button-arrow
+            button.big-button-arrow
               +big-button-arrow('перейти к оплате')
           .second-dropdown-guests-container-expanded
-            p.name dropdown
             form.dropdown-guests
-              +dropdown-guests()
+              +dropdown-guests("dropdown")
           .bullet-list-container
             .bullet-list
               +bullet-list("bullet list")

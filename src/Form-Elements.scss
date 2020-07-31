@@ -1,27 +1,30 @@
 body {
   background: #E5E5E5;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 :active, :hover, :focus {
   outline: 0;
   outline-offset: 0;
 }
 h3 {
-  font-family: Montserrat;
-  font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
 }
-input[type="submit"] {
+input[type="button"] {
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   background-color: inherit;
-  border-width: 2px;
   border-width: 0px;
   text-transform: uppercase;
   color: #BC9CFF;
@@ -62,15 +65,11 @@ input[type="reset"] {
 @import './blocks/button-else/button-else.scss';
 @import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
 @import './blocks/Form-Elements/bullet-list/bullet-list.scss';
-
 .formElements{
   position: relative;
   padding: 140px 141px 131px 141px;
   max-width: 1440px;
   background: #FFFFFF;
-  // @media (max-width: 830px) {
-  //   padding: 140px 50px 131px 60px;
-  // }
   @media (max-width: 560px) {
     padding: 140px 8px 131px 8px;
   }
@@ -82,16 +81,6 @@ input[type="reset"] {
   left: 30px;
   top: 30px;
 }
-
-.name {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  text-transform: uppercase;
-  color: #1F2041;
-}
 .condition {
   font-family: Montserrat;
   font-style: normal;
@@ -101,7 +90,6 @@ input[type="reset"] {
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
 }
-
 .colomn1 {
   position: relative;
   display: inline-flex;
