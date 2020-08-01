@@ -1,4 +1,10 @@
 body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
   background: #E5E5E5;
 }
 :active, :hover, :focus {
@@ -71,6 +77,8 @@ input[type="reset"] {
 @import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
 @import './blocks/Form-Elements/bullet-list/bullet-list.scss';
 @import './blocks/Cards/room-selection/room-selection.scss';
+@import './blocks/Form-Elements/login-data/login-data.scss';
+@import './blocks/Cards/registration/registration.scss';
 .cards {
   max-width: 1440px;
   display: flex;
@@ -92,6 +100,7 @@ input[type="reset"] {
   flex-direction: column;
   max-width: 380px;
   .room-selection {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 }
+

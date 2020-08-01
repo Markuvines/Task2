@@ -152,3 +152,29 @@ mixin room-selection()
 mixin login-data()
   +text-field-default("Email")
   +text-field-default("Пароль")
+mixin registration()
+  .registration-wraper
+    h1.registration__title Регистрация аккаунта
+    .text-field.registration__text-field
+      +text-field-default("Имя")
+    .text-field.registration__text-field
+      +text-field-default("Фамилия")
+    .registration__radio-buttons
+      .registration__radio-button.radio-button
+        +custom-radio-button("Мужчина", "пол")
+      .registration__radio-button.radio-button
+        +custom-radio-button("Женщина", "пол")
+    h3.registration__name дата рождения
+    .text-field.registration__text-field
+      +text-field-default("ДД.ММ.ГГГГ")
+    h3.registration__name данные для входа в сервис
+    .login-data.registration__login-data
+      +login-data()
+    .toggle-item.registration__toggle-item
+      +toggle-item("Получать спецпредложения")
+    button.big-button-arrow.registration__big-button-arrow
+      +big-button-arrow("перейти к оплате")
+    .registration__have-account
+      span Уже есть аккаунт на Toxin
+      button.button-else.registration__button-else
+        +button-else("войти")

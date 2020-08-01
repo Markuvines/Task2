@@ -1,0 +1,17 @@
+.registration {
+  padding: 40px 1.51041667vw 30px 1.51041667vw;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @import './__title/registration__title.scss';
+  @import './__text-field/registration__text-field.scss';
+  @import './__radio-buttons/registration__radio-buttons.scss';
+  @import './__radio-button/registration__radio-button.scss';
+  @import './__name/registration__name.scss';
+  @import './__login-data/registration__login-data.scss';
+  @import './__toggle-item/registration__toggle-item.scss';
+  @import './__big-button-arrow/registration__big-button-arrow.scss';
+  @import './__have-account/registration__have-account.scss';
+  @import './__button-else/registration__button-else.scss';
+}
