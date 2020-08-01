@@ -52,12 +52,12 @@ $( document ).ready(function() {
           else
             $(this).parents('.dropdown-guests').find('.dropdown-guests__text-field-default').val(guests + ' гостей');
   })
-  $('.dropdown-guests').on('reset',function(){
-    count = 0;
-    guests = 0;
-    $(this).find('.dropdown-guests__count').text(count);
-    $(this).find('.dropdown-guests__reset').hide();
-    $(this).find('.minus-button--fill').removeClass('minus-button--fill')
+  $('.dropdown-guests__reset').on('click',function(){
+    let count = 0;
+    // guests = 0;
+    $(this).parents('.dropdown-guests__dropdown-body').find('.dropdown-guests__count').text(count);
+    $(this).parents('.dropdown-guests__dropdown-body').find('.dropdown-guests__reset').hide();
+    $(this).parents('.dropdown-guests__dropdown-body').find('.minus-button--fill').removeClass('minus-button--fill')
   });
   $('.dropdown-guests__arrow').on('click', function(){
     $(this).parent().next().toggle();
