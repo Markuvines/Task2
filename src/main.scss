@@ -74,6 +74,7 @@ input[type="reset"] {
 @import './blocks/Form-Elements/star-rate/star-rate.scss';
 @import './blocks/button-default/button-default';
 @import './blocks/button-else/button-else.scss';
+@import './blocks/Form-Elements/date/date.scss';
 @import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
 @import './blocks/Form-Elements/bullet-list/bullet-list.scss';
 @import './blocks/Cards/room-selection/room-selection.scss';
@@ -95,10 +96,14 @@ input[type="reset"] {
   left: 30px;
   top: 30px;
 }
+.container {
+  display: flex;
+}
 .colomn1 {
   display: flex;
   flex-direction: column;
   max-width: 380px;
+  margin-right: 2.08333333vw;
   .room-selection {
     margin-bottom: 38px;
   }

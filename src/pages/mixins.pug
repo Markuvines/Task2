@@ -131,20 +131,20 @@ mixin bullet-list (text)
       | Время прибытия — после 13:00,
       br
       | а выезд до 12:00
+mixin date(name)
+  h3.date__name= name
+  .date__dropdown
+    +text-field-default("ДД.ММ.ГГГГ")
+    .date__dropdown-arrow
+      img(src="./src/img/expand_more.svg", alt="стрелка")
 mixin room-selection()
   .room-selection__wraper
     h1.room-selection__title Найдём номера под ваши пожелания
     .room-selection__dates
-      .room-selection__arrival
-        h3.room-selection__name прибытие
-        input(class="room-selection__date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
-        .room-selection__dropdown-arrow
-          img(src="./src/img/expand_more.svg", alt="стрелка")
-      .room-selection__departure
-        h3.room-selection__name выезд
-        input(class="room-selection__date-dropdown text-field-default" type="text" value="ДД.ММ.ГГГГ")
-        .room-selection__dropdown-arrow
-          img(src="./src/img/expand_more.svg", alt="стрелка")
+      .date.room-selection__date
+        +date("прибытие")
+      .date.room-selection__date
+        +date("выезд")
     .dropdown-guests.room-selection__dropdown-guests
       +dropdown-guests('гости')
     button.big-button-arrow.room-selection__big-button-arrow
