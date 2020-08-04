@@ -1,5 +1,8 @@
 &__have-account {
   span {
-    margin-right: 35px;
+    margin-right: 1.82291667vw;
+    @media (max-width: 370px) {
+      font-size: 12px;
+    }
   }
 }
