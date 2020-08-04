@@ -1,0 +1,22 @@
+.reservation {
+  padding: 40px 1.51041667vw 30px 1.51041667vw;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @import './__header/reservation__header.scss';
+  @import './__number/reservation__number.scss';
+  @import './__room/reservation__room.scss';
+  @import './__lux/reservation__lux.scss';
+  @import './__price/reservation__price.scss';
+  @import './__per-day/reservation__per-day.scss';
+  @import './__dates/reservation__dates.scss';
+  @import './__date/reservation__date.scss';
+  @import './__dropdown-guests/reservation__dropdown-guests.scss';
+  @import './__calculation/reservation__calculation.scss';
+  @import './__discount/reservation__discount.scss';
+  @import './__text-tip/reservation__text-tip.scss';
+  @import './__additions/reservation__additions.scss';
+  @import './__summary/reservation__summary.scss';
+  @import './__line/reservation__line.scss';
+}

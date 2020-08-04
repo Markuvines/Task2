@@ -178,3 +178,39 @@ mixin registration()
       span Уже есть аккаунт на Toxin
       button.button-else.registration__button-else
         +button-else("войти")
+mixin reservation()
+  .reservation-wraper
+    .reservation__header
+      span.reservation__number №
+      span.reservation__room 888
+      span.reservation__lux люкс
+      span.reservation__price 9 990₽
+      span.reservation__per-day в сутки
+    .reservation__dates
+      .date.reservation__date
+        +date("прибытие")
+      .date.reservation__date
+        +date("выезд")
+    .dropdown-guests.reservation__dropdown-guests
+      +dropdown-guests('гости')
+    .reservation__calculation
+      span 9 990₽ х 4 суток
+      span 39 960₽
+    .reservation__discount
+      .reservation__text-tip
+        span Сбор за услуги: скидка 2 179₽
+        .reservation__tip
+          img(src="./src/img/tip.svg", alt="инфо")
+      span 0₽
+    .reservation__additions
+      .reservation__text-tip
+        span Сбор за дополнительные услуги
+        .reservation__tip
+          img(src="./src/img/tip.svg", alt="инфо")
+      span 300₽
+    .reservation__summary
+      span Итого
+      .reservation__line
+      span 38 081₽
+    button.big-button-arrow.reservation__big-button-arrow
+      +big-button-arrow("забронировать")

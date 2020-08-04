@@ -1,0 +1,17 @@
+&__summary {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1px;
+  margin-bottom: 20px;
+  font-family: Quicksand, sans-serif;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  color: #1F2041;
+  span:first-child {
+    font-size: 21px;
+  }
+  span:last-child {
+    flex-shrink: 0;
+  }
+}
