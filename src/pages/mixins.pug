@@ -214,3 +214,13 @@ mixin reservation()
       span 38 081₽
     button.big-button-arrow.reservation__big-button-arrow
       +big-button-arrow("забронировать")
+mixin login()
+  h1.login__title Войти
+  .login-data.login__login-data
+    +login-data()
+  button.big-button-arrow.login__big-button-arrow
+    +big-button-arrow("войти")
+  .login__no-account
+    span Нет аккаунта на Toxin?
+    button.button-else.login__button-else
+      +button-else("создать")

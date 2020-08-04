@@ -1,0 +1,11 @@
+.login {
+  padding: 40px 1.51041667vw 32px 1.51041667vw;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  @import './__title/login__title.scss';
+  @import './__login-data/login__login-data.scss';
+  @import './__big-button-arrow/login__big-button-arrow.scss';
+  @import './__no-account/login__no-account.scss';
+}
