@@ -82,6 +82,9 @@ input[type="reset"] {
 @import './blocks/Cards/registration/registration.scss';
 @import './blocks/Cards/reservation/reservation.scss';
 @import './blocks/Cards/login/login.scss';
+@import './blocks/Form-Elements/star-rate-fixed/star-rate-fixed.scss';
+@import './blocks/Cards/room-card-lux/room-card-lux.scss';
+@import './blocks/Cards/room-card/room-card.scss';
 .cards {
   max-width: 1440px;
   display: flex;
