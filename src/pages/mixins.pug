@@ -236,3 +236,27 @@ mixin login()
     span Нет аккаунта на Toxin?
     button.button-else.login__button-else
       +button-else("создать")
+mixin room-card-lux(room, price, rate, comments)
+  .room-card-lux__slider
+    div
+      img(src=`src/img/${room}/room1.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room2.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room3.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room4.png`, alt="alt")
+  .room-card-lux__body
+    .room-card-lux__header
+      span.number №
+      span.room=room
+      span.lux люкс
+      span.price=`${price}₽`
+      span.per-day в сутки
+    .room-card-lux__line
+    .room-card-lux__rate-comments
+      .star-rate-fixed.room-card-lux__star-rate-fixed(data-count=comments)
+        +star-rate-fixed(rate)
+      .room-card-lux__comments
+        span=comments
+        span Отзывов

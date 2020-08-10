@@ -1,0 +1,14 @@
+.room-card-lux {
+  overflow: hidden;
+  width: 270px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  @import './__slider/room-card-lux__slider.scss';
+  @import './__body/room-card-lux__body.scss';
+  @import './__header/room-card-lux__header.scss';
+  @import './__line/room-card-lux__line.scss';
+  @import './__rate-comments/room-card-lux__rate-comments.scss';
+  @import './__star-rate-fixed/room-card-lux__star-rate-fixed.scss';
+  @import './__comments/room-card-lux__comments.scss';
+}
