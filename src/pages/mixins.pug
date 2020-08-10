@@ -122,6 +122,18 @@ mixin star-rate()
         .star-rate__star
           img(class="star-rate__back" src="./src/img/star_border.svg", alt="alt")
           img(class="star-rate__front" src="./src/img/star.svg", alt="alt")
+mixin star-rate-fixed(number)
+   ul.star-rate-fixed__list
+    -for (var i=1; i<=number; i++)
+      li.star-rate-fixed__item--active
+        .star-rate-fixed__star
+          img(class="star-rate-fixed__back" src="./src/img/star_border.svg", alt="alt")
+          img(class="star-rate-fixed__front" src="./src/img/star.svg", alt="alt")
+    -for (var i=++number; i<=5; i++)
+      li.star-rate-fixed__item
+        .star-rate-fixed__star
+          img(class="star-rate-fixed__back" src="./src/img/star_border.svg", alt="alt")
+          img(class="star-rate-fixed__front" src="./src/img/star.svg", alt="alt")
 mixin bullet-list (text)
   h3.bullet-list__name=text
   ul.bullet-list__menu
