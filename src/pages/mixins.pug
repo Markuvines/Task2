@@ -260,3 +260,26 @@ mixin room-card-lux(room, price, rate, comments)
       .room-card-lux__comments
         span=comments
         span Отзывов
+mixin room-card(room, price, rate, comments)
+  .room-card__slider
+    div
+      img(src=`src/img/${room}/room1.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room2.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room3.png`, alt="alt")
+    div
+      img(src=`src/img/${room}/room4.png`, alt="alt")
+  .room-card__body
+    .room-card__header
+      span.number №
+      span.room=room
+      span.price=`${price}₽`
+      span.per-day в сутки
+    .room-card__line
+    .room-card__rate-comments
+      .star-rate-fixed.room-card__star-rate-fixed
+        +star-rate-fixed(rate)
+      .room-card__comments
+        span=comments
+        span Отзывов
