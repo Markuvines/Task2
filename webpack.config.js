@@ -3,6 +3,7 @@
 //        contentBase: './dist'
 //    },
 //}
+const webpack = require('webpack')
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -63,6 +64,10 @@ module.exports = {
      new HtmlWebpackPlugin({
         title: 'Custom template using Handlebars',
         template: 'src/pages/index.pug'
+      }),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
       })
  ],
 }
