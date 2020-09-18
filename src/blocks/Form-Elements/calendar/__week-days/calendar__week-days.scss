@@ -1,0 +1,22 @@
+&__week-days {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #BC9CFF;
+  }
+  
+}

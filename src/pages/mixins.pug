@@ -283,3 +283,20 @@ mixin room-card(room, price, rate, comments)
       .room-card__comments
         span=comments
         span Отзывов
+mixin calendar()
+  .calendar__header
+    button.calendar__prev
+    span.calendar__month-year
+    button.calendar__next
+  .calendar__week-days
+    div Пн
+    div Вт
+    div Ср
+    div Чт
+    div Пт
+    div Сб
+    div Вс
+  .calendar__days
+  .calendar__buttons
+    button.calendar__reset.reset очистить
+    button.calendar__apply.apply применить
