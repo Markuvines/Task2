@@ -300,3 +300,11 @@ mixin calendar()
   .calendar__buttons
     button.calendar__reset.reset очистить
     button.calendar__apply.apply применить
+mixin date-range()
+  .date-range__dates
+    .date-range__date-input
+      +date('ПРИБЫТИЕ')
+    .date-range__date-input
+      +date('ВЫЕЗД')
+  .date-range__calendar.calendar
+    +calendar()
