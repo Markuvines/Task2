@@ -1,9 +1,9 @@
 .date-range {
   position: relative;
-  margin-top: 50px;
+  margin-bottom: 20.56px;
   width: 320px;
   background-color: #ffffff;
   @import './__dates/date-range__dates.scss';
-  @import './__date-input/date-range__date-input.scss';
+  @import './__arrival/date-range__arrival.scss';
   @import './__calendar/date-range__calendar.scss';
 }
