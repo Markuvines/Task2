@@ -152,11 +152,8 @@ mixin date(name)
 mixin room-selection()
   .room-selection__wraper
     h1.room-selection__title Найдём номера под ваши пожелания
-    .room-selection__dates
-      .date.room-selection__date
-        +date("прибытие")
-      .date.room-selection__date
-        +date("выезд")
+    .room-selection__date-range.date-range
+      +date-range()
     .dropdown-guests.room-selection__dropdown-guests
       +dropdown-guests('гости')
     button.big-button-arrow.room-selection__big-button-arrow
@@ -285,9 +282,9 @@ mixin room-card(room, price, rate, comments)
         span Отзывов
 mixin calendar()
   .calendar__header
-    button.calendar__prev
+    button.calendar__prev(type='button')
     span.calendar__month-year
-    button.calendar__next
+    button.calendar__next(type='button')
   .calendar__week-days
     div Пн
     div Вт
@@ -298,13 +295,13 @@ mixin calendar()
     div Вс
   .calendar__days
   .calendar__buttons
-    button.calendar__reset.reset очистить
-    button.calendar__apply.apply применить
+    button.calendar__reset.reset(type='button') очистить
+    button.calendar__apply.apply(type='button') применить
 mixin date-range()
   .date-range__dates
-    .date-range__date-input
+    .date-range__arrival.date
       +date('ПРИБЫТИЕ')
-    .date-range__date-input
+    .date-range__departure.date
       +date('ВЫЕЗД')
   .date-range__calendar.calendar
     +calendar()
