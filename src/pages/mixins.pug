@@ -195,11 +195,8 @@ mixin reservation()
       span.reservation__lux люкс
       span.reservation__price 9 990₽
       span.reservation__per-day в сутки
-    .reservation__dates
-      .date.reservation__date
-        +date("прибытие")
-      .date.reservation__date
-        +date("выезд")
+    .reservation__date-range.date-range
+      +date-range()
     .dropdown-guests.reservation__dropdown-guests
       +dropdown-guests('гости')
     .reservation__calculation
