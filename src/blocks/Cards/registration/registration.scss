@@ -1,9 +1,16 @@
 .registration {
-  padding: 40px 1.51041667vw 30px 1.51041667vw;
+  padding: 40px 2.142857142857143em 30px 2.142857142857143em;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
   @import './__title/registration__title.scss';
   @import './__text-field/registration__text-field.scss';
   @import './__radio-buttons/registration__radio-buttons.scss';
