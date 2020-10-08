@@ -4,6 +4,13 @@
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
   @import './__title/login__title.scss';
   @import './__login-data/login__login-data.scss';
   @import './__big-button-arrow/login__big-button-arrow.scss';
