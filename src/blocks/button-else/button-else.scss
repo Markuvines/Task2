@@ -1,3 +1,7 @@
+@mixin button-w-h($width,$height) {
+  width: $width ;
+  height: $height;
+}
 .button-else {
   @import './__body/button-else__body.scss';
   @import './__text/button-else__text.scss';

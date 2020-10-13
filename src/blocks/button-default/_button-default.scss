@@ -1,3 +1,7 @@
+@mixin button-w-h($width,$height) {
+  width: $width ;
+  height: $height;
+}
 .button-default {
   @import './__text/button-default__text.scss';
   @include button-w-h(99px,44px);
