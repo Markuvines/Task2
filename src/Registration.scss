@@ -1,0 +1,52 @@
+@import './blocks/header-menu/header-menu.scss';
+@import './blocks/Standart-Nav-Bar/_Standart-Nav-Bar.scss';
+@import './blocks/Form-Elements/text-field-default/text-field-default.scss';
+@import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
+@import './blocks/social/social.scss';
+@import './blocks/Footer-Widgets-and-Copyright-Bar/Footer-Widgets-and-Copyright-Bar.scss';
+@import './blocks/Form-Elements/custom-radio-button/custom-radio-button.scss';
+@import './blocks/Form-Elements/login-data/login-data.scss';
+@import './blocks/Form-Elements/toggle/toggle.scss';
+@import './blocks/Form-Elements/toggle-item/toggle-item.scss';
+@import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
+@import './blocks/button-else/button-else.scss';
+@import './blocks/Cards/registration/registration.scss';
+h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26.5px;
+  line-height: 30px;
+  color: #1F2041;
+}
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+html {
+  
+}
+body {
+  display: flex;
+  justify-content: center;
+  background: #E5E5E5;
+ }
+header {
+  z-index: 1;
+}
+main {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+  padding: 19px 0 19px 0;
+  background-image: url('./img/image\ 4.jpg');
+  background-position: bottom;
+}
+.content__registration {
+  max-width: 380px;
+}
