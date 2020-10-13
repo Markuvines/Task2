@@ -20,3 +20,6 @@ $('.room-selection .calendar__reset').on('click',function(){
   $('.room-selection .date-range__arrival input').val('');
   $('.room-selection .date-range__departure input').val('');
 })
+$('.date-range__dates .date__dropdown-arrow').on('click', function(){
+  $(this).parents('.date-range__dates').siblings('.date-range__calendar').toggle()
+});
