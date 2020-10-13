@@ -53,11 +53,12 @@ $( document ).ready(function() {
             $(this).parents('.dropdown-guests').find('.dropdown-guests__text-field-default').val(guests + ' гостей');
   })
   $('.dropdown-guests__reset').on('click',function(){
-    let count = 0;
+    // let count = 0;
     // guests = 0;
-    $(this).parents('.dropdown-guests__dropdown-body').find('.dropdown-guests__count').text(count);
+    $(this).parents('.dropdown-guests__dropdown-body').find('.dropdown-guests__count').text(0);
     $(this).parents('.dropdown-guests__dropdown-body').find('.dropdown-guests__reset').hide();
-    $(this).parents('.dropdown-guests__dropdown-body').find('.minus-button--fill').removeClass('minus-button--fill')
+    $(this).parents('.dropdown-guests__dropdown-body').find('.minus-button--fill').removeClass('minus-button--fill');
+    $(this).parents('.room-selection__dropdown-guests').find('.dropdown-guests__text-field-default').val('Сколько гостей')
   });
   $('.dropdown-guests__arrow').on('click', function(){
     $(this).parent().next().toggle();
