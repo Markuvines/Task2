@@ -1,0 +1,114 @@
+// @import './blocks/button-else/button-else.scss';
+// @import './blocks/button-default/_button-default.scss';
+@import './blocks/header-menu/header-menu.scss';
+@import './blocks/Standart-Nav-Bar/_Standart-Nav-Bar.scss';
+@import './blocks/Form-Elements/text-field-default/text-field-default.scss';
+@import './blocks/Form-Elements/subscription-text-field/subscription-text-field.scss';
+@import './blocks/social/social.scss';
+@import './blocks/Footer-Widgets-and-Copyright-Bar/Footer-Widgets-and-Copyright-Bar.scss';
+@import './blocks/Cards/room-selection/room-selection.scss';
+@import './blocks/Form-Elements/date/date.scss';
+@import './blocks/Form-Elements/dopdown-guests/dropdown-guests.scss';
+@import './blocks/Form-Elements/date-range/date-range.scss';
+@import './blocks/Form-Elements/calendar/calendar.scss';
+@import './blocks/Form-Elements/big-button-arrow/big-button-arrow.scss';
+@import './blocks/Form-Elements/apply/apply.scss';
+@import './blocks/Form-Elements/reset/reset.scss';
+html {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+input[type="button"] {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: inherit;
+  border-width: 2px;
+  border-width: 0px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  padding: 0;
+  }
+input[type="reset"] {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  background-color: inherit;
+  border-width: 0px;
+  color: rgba(31, 32, 65, 0.5);
+  padding: 0;
+}
+h1 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  color: #1F2041;
+}
+h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+}
+body {
+ display: flex;
+ justify-content: center;
+ background: #E5E5E5;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  z-index: 1;
+}
+main {
+  display: flex;
+  // justify-content: center;
+  max-width: 1440px;
+  padding: 70px 0 18px 140px;
+  background-image: url('./img/image\ 3.jpg');
+  background-position: bottom;
+}
+.content {
+  display: flex;
+  height: 742px;
+  width: 1166px;
+}
+.content__room-selection {
+  margin-right: 489px;
+  max-width: 380px;
+  max-height: 374px;
+}
+.text {
+  align-self: flex-end;
+  height: 48px;
+  width: 297px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.75);
+  line-height: 24px;
+  margin-bottom: 3px;
+  // font-family: Montserrat;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 14px;
+  // line-height: 24px;
+  // color: rgba(31, 32, 65, 0.75);
+}
