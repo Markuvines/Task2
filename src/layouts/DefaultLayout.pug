@@ -1,0 +1,17 @@
+html
+  head
+    meta(charset="UTF-8")
+    link(rel="stylesheet", href="reset.css")
+    link(rel="stylesheet", href="fonts.css")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title First page
+  body
+    .wrapper
+      header.Standart-Nav-Bar
+        include ../blocks/Standart-Nav-Bar/Standart-Nav-Bar
+      main
+        .content
+          block main
+          p.text Лучшие номера для вашей работы,<br>отдыха и просто вдохновения
+      footer.Footer-Widgets-and-Copyright-Bar
+       include ../blocks/Footer-Widgets-and-Copyright-Bar/Footer-Widgets-and-Copyright-Bar
