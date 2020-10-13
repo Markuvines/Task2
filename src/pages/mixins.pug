@@ -73,8 +73,8 @@ mixin dropdown-guests(title)
           .dropdown-guests__plus-button.plus-button
             +plus-button()
     .dropdown-guests__reset-submit
-      input(class="dropdown-guests__reset" type="reset", value="очистить")
-      input(class="dropdown-guests__submit" type="button", value="применить")
+      button(class="dropdown-guests__reset reset" type="button") очистить
+      button(class="dropdown-guests__submit apply" type="button") применить
 mixin custom-checkbox(title)
   label(class="custom-checkbox")
     input(type="checkbox")
@@ -302,3 +302,32 @@ mixin date-range()
       +date('ВЫЕЗД')
   .date-range__calendar.calendar
     +calendar()
+
+
+mixin button-else(text)
+  .button-else__body
+    .button-else__text=text
+mixin button-default(text)
+  .button-default__text=text
+mixin menu-item(elementname, dropdown=false, active=false)
+  if (dropdown==true)
+    if (active==true)
+      a(href="#")
+        li(class="header-menu__item"+"header-menu__item--active")= elementname
+          .header-menu__dropdown-img
+            img(src="./src/img/expand_more.svg")
+    else
+      //- a(href="#")
+      li(class="header-menu__item")= elementname
+        .header-menu__dropdown-img
+          img(src="./src/img/expand_more.svg")
+  else
+    if (active==true)
+      //- a(href="#")
+      li(class="header-menu__item "+"header-menu__item--active")= elementname
+    else
+      //- a(href="#")
+      li(class="header-menu__item")= elementname
+mixin footer-menu(...items)
+  each item in items
+    li.Footer-Widgets-and-Copyright-Bar__menu-item=item
